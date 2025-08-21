@@ -1,4 +1,5 @@
-using mediumclone_ui.Domain.Entities;
+using mediumclone_api.Common.Utilities;
+using mediumclone_api.Domain.Entities;
 using Microsoft.Extensions.Configuration;
 using MongoDB.Driver;
 
@@ -14,4 +15,9 @@ public class MongoDbContext
         _db = client.GetDatabase(mongoDbSections["DatabaseName"]);
     }
     public IMongoCollection<User> Users => _db.GetCollection<User>("Users");
+    public virtual IMongoCollection<T> GetCollectionForBase<T>()
+    {
+        var entity = MongoDbManipulation.Pluralize(typeof(T).Name);
+        return _db.GetCollection<T>(entity);
+    }
 }

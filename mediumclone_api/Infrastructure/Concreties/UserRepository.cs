@@ -1,20 +1,17 @@
+using mediumclone_api.Domain.Entities;
 using mediumclone_api.Infrastructure.Interfaces;
 using mediumclone_api.Infrastructure.Mongo;
-using mediumclone_ui.Domain.Entities;
 
 namespace mediumclone_api.Infrastructure.Concreties;
 
-public class UserRepository : IUserRepository
+public class UserRepository : RepositoryBase<User>, IUserRepository
 {
-    private readonly MongoDbContext _userMongoDbContext;
-
-    public UserRepository(MongoDbContext userMongoDbContext)
+    public UserRepository(MongoDbContext mongoDb) : base(mongoDb)
     {
-        _userMongoDbContext = userMongoDbContext;
-    }
 
+    }
     public async Task AddUser(User userDto)
     {
-        await _userMongoDbContext.Users.InsertOneAsync(userDto);
+        await InsertEntity(userDto);
     }
 }

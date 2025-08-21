@@ -1,8 +1,8 @@
-using mediumclone_ui.Domain.Entities;
+using mediumclone_api.Domain.Entities;
 
 namespace mediumclone_api.Infrastructure.Interfaces
 {
-    public interface IUserRepository
+    public interface IUserRepository : IRepositoryBase<User>
     {
         Task AddUser(User userDto);
     }

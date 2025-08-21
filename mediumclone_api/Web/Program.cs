@@ -18,6 +18,7 @@ builder.Services.AddCookiePolicy(config =>
     config.HttpOnly = Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy.Always;
     config.Secure = CookieSecurePolicy.SameAsRequest;
 });
+builder.Services.SupportingLibrariesServices();
 builder.Services.AllServices();
 var app = builder.Build();
 

@@ -1,5 +1,7 @@
+using MediatR;
+using mediumclone_api.Application.Commands.User;
+using mediumclone_api.Domain.Entities;
 using mediumclone_api.Infrastructure.Interfaces;
-using mediumclone_ui.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace mediumclone_api.Presentation.Controllers;
@@ -8,17 +10,16 @@ namespace mediumclone_api.Presentation.Controllers;
 [Route("api/[controller]")]
 public class UserController : ControllerBase
 {
-    private readonly IUserRepository _userRepository;
-
-    public UserController(IUserRepository userRepository)
+    private readonly IMediator _mediator;
+    public UserController(IMediator mediator)
     {
-        _userRepository = userRepository;
+        _mediator = mediator;
     }
 
     [HttpPost]
-    public async Task<IActionResult> CreateUser([FromBody] User userDto)
+    public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand userDto)
     {
-        await _userRepository.AddUser(userDto);
-        return Ok(new { Message = "User created" });
+        await _mediator.Send(userDto);
+        return Ok(new { message = "The user is created." });
     }
 }
