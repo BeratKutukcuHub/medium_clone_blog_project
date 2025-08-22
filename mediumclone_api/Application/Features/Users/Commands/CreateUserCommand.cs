@@ -1,8 +1,9 @@
 using MediatR;
+using mediumclone_api.Application.Features.Profiles;
 
-namespace mediumclone_api.Application.Commands.User;
+namespace mediumclone_api.Application.Features.Users.Commands;
 
-public class CreateUserCommand : IRequest
+public class CreateUserCommand : IRequest<CreateUserResponse>
 {
     public string Username { get; set; } = null!;
     public string Email { get; set; } = null!;

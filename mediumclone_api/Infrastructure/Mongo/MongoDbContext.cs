@@ -17,7 +17,7 @@ public class MongoDbContext
     public IMongoCollection<User> Users => _db.GetCollection<User>("Users");
     public virtual IMongoCollection<T> GetCollectionForBase<T>()
     {
-        var entity = MongoDbManipulation.Pluralize(typeof(T).Name);
+        var entity = MongoDbManipulationTry.DataBaseName<T>();
         return _db.GetCollection<T>(entity);
     }
 }

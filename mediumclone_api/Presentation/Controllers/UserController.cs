@@ -1,7 +1,6 @@
 using MediatR;
-using mediumclone_api.Application.Commands.User;
-using mediumclone_api.Domain.Entities;
-using mediumclone_api.Infrastructure.Interfaces;
+using mediumclone_api.Application.Features.Users.Commands;
+using mediumclone_api.Application.Features.Users.Queries;
 using Microsoft.AspNetCore.Mvc;
 
 namespace mediumclone_api.Presentation.Controllers;
@@ -16,10 +15,34 @@ public class UserController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpPost]
-    public async Task<IActionResult> CreateUser([FromBody] CreateUserCommand userDto)
+    [HttpGet]
+    public async Task<IActionResult> GetAllUserEntities()
     {
-        await _mediator.Send(userDto);
-        return Ok(new { message = "The user is created." });
+        var response = await _mediator.Send(new GetAllUserQuery());
+        return Ok(response);
+    }
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(string id)
+    {
+        var response = await _mediator.Send(new GetByIdUserQuery { Id = id });
+        return Ok(response);
+    }
+    [HttpPost]
+    public async Task<IActionResult> CreateUser(CreateUserCommand createUserCommand)
+    {
+        var response = await _mediator.Send(createUserCommand);
+        return Ok(new { Message = "The user created", Response = response });
+    }
+    [HttpPut]
+    public async Task<IActionResult> UpdateUser(UpdateUserCommand updateUserCommand)
+    {
+        var id = await _mediator.Send(updateUserCommand);
+        return Ok(id);
+    }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteUser(string id)
+    {
+        var userId = await _mediator.Send(new DeleteUserCommand{ Id = id });
+        return Ok(userId);
     }
 }

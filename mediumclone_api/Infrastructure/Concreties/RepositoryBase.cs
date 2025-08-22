@@ -1,6 +1,8 @@
+using Isopoh.Cryptography.Argon2;
 using mediumclone_api.Domain.Entities;
 using mediumclone_api.Infrastructure.Interfaces;
 using mediumclone_api.Infrastructure.Mongo;
+using mediumclone_api.Infrastructure.Utilities;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -40,15 +42,15 @@ public class RepositoryBase<T> : IRepositoryBase<T> where T : BaseEntity
     public async Task InsertEntity(T entity)
     {
         entity.Id = ObjectId.GenerateNewId().ToString();
-        await _collection.InsertOneAsync(entity);   
+        HasherPassword.Hash(entity);
+        await _collection.InsertOneAsync(entity);
     }
     public async Task UpdateEntiy(string Id , T newlyEntity)
     {
         if (!ObjectId.TryParse(Id, out _))
             throw new ArgumentException("Invalid Id");
-        
+        HasherPassword.Hash(newlyEntity);
         var getEntity = Builders<T>.Filter.Eq(eq => eq.Id, Id);
-        
         await _collection.ReplaceOneAsync(getEntity, newlyEntity);
     }
 

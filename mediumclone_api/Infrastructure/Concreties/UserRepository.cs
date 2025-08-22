@@ -8,7 +8,6 @@ public class UserRepository : RepositoryBase<User>, IUserRepository
 {
     public UserRepository(MongoDbContext mongoDb) : base(mongoDb)
     {
-
     }
     public async Task AddUser(User userDto)
     {

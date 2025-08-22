@@ -8,7 +8,6 @@ public static class MongoDbManipulation {
         string lowerEntity = Entity.ToLower();
         int len = lowerEntity.Length;
 
-        // 1️⃣ y ile bitiyorsa
         if (lowerEntity.EndsWith("y"))
         {
             if (len >= 2 && IsConsonant(lowerEntity[len - 2]))

@@ -7,21 +7,28 @@ namespace mediumclone_api.Application.Extensions;
 
 public static class MapperExtension
 {
-    public static TCommand CommandAndQueryMapResponse<TCommand, TEntity>(this IRequestHandler<TCommand,Unit> _request,
-     TEntity entity,
-     IServiceProvider _service) where TCommand : IRequest
+    public static TCommand CommandQueryResponse<TCommand, DTO>(this IRequestHandler<TCommand, DTO> request,
+    DTO dto,
+    IServiceProvider _service
+    ) where TCommand : IRequest<DTO>
     {
         IMapper map = _service.GetRequiredService<IMapper>();
-        var mapCommand = map.Map<TCommand>(entity);
-        return mapCommand;
+        return map.Map<TCommand>(dto);
     }
-    
-    public static TEntity EntityResponse<TCommand, TEntity>(this IRequestHandler<TCommand,Unit> _request,
-     TCommand command,
-     IServiceProvider _service) where TCommand : IRequest
+
+    public static DTO DTOResponse<TCommand, DTO>(this IRequestHandler<TCommand, DTO> request,
+    TCommand commandOrQuery,
+    IServiceProvider _service
+    ) where TCommand : IRequest<DTO>
     {
         IMapper map = _service.GetRequiredService<IMapper>();
-        var mapCommand = map.Map<TEntity>(command);
-        return mapCommand;
+        return map.Map<DTO>(commandOrQuery);
+    }
+
+    public static TEntity EntityResponse<TCommand, DTO, TEntity>(this IRequestHandler<TCommand, DTO> request,
+    TCommand commandOrQuery, IServiceProvider _service) where TCommand : IRequest<DTO>
+    {
+        IMapper map = _service.GetRequiredService<IMapper>();
+        return map.Map<TEntity>(commandOrQuery);
     }
 }

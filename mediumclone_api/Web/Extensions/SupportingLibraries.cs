@@ -1,5 +1,5 @@
 using MediatR;
-using mediumclone_api.Application.Commands.User;
+using mediumclone_api.Application.Features.Users.Commands;
 using mediumclone_api.Web.Profiles;
 
 namespace mediumclone_api.Web.Extensions;
