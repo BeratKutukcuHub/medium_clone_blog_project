@@ -1,0 +1,185 @@
+*{
+    color: #242424;
+}
+.widthNavbar {
+    width: 77.5%;
+}
+.ml{
+    margin: 20px 0px 0px 100px;
+}
+.pointer {
+    cursor: pointer;
+}
+.fa{
+    font-size: 0.8rem;
+}
+h1 a{
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+h3 a{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.ne{
+    border: none;
+}
+.flex-balance{
+    flex: 1;
+}
+.borderbottom{
+    border-bottom: 2px solid black;
+}
+.fweight{
+    font-weight: 450;
+    letter-spacing: -0.2px;
+    font-size: 1.3rem;
+    line-height: 28px;
+}
+.lhero{
+    width: 70%;
+    margin:40px 0px 0px 120px;
+}
+@media (max-width:950px) {
+    .lhero {
+        margin: 40px 0px 0px 40px;
+    }
+}
+.rhero{
+    width: 30%;
+    height: 550px;
+}
+.img{
+    overflow-x: hidden;
+    object-fit: cover;
+    top: 0%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 350px;
+    overflow: hidden;
+}
+.hero-title{
+    margin: 0px;
+    font-size: 6.5rem;
+    letter-spacing: -7.5px;
+    font-weight: 400;
+}
+.hero-detail{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.button-sizer{
+    margin-top: 20px;
+    width: 180px;
+    border: none;
+    padding: 10px 0px;
+}
+.text-custom {
+    color: #242424;
+}
+.fb{
+    background-color: #242424;
+}
+.bg-custom{
+    background-color: #242424;
+}
+.fd{
+    height: 90px;
+    border-top: 1px solid #242424;
+}
+.fa{
+    text-decoration: none;
+    color: #242424a3;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-wrap: nowrap;
+}
+.fa:hover{
+    color: #242424;
+}
+.ff{
+    width: 65%;
+}
+.fc{
+    height: 65px;
+}
+.hero{
+    width: 100vw;
+    height: auto;
+    flex: 1;
+}
+.ng{
+    gap: 10px;
+}
+.ng a{
+    text-wrap: nowrap;
+}
+.nc{
+    width: 100%;
+}
+@media (min-height:350px) {
+    .fd{
+        min-width: 350px;
+    }
+    .hero{
+        min-width: 350px;
+    }
+    .nc{
+        min-width: 350px;
+    }
+}
+.ni{display: inline;}
+@media (max-width:885px) {
+    .lhero{
+        margin: 40px auto 0px 20px;
+    }
+    .hero-title{
+        font-size: 5rem;
+        text-wrap: nowrap;
+    }
+    .hero-detail{
+        font-size: 1.4rem;
+        text-wrap: nowrap;
+    }
+    .hero{
+        max-width: 100vw;
+        height: 550px;
+        overflow-y: hidden;
+    }
+    .widthNavbar{
+        width: 90%;
+    }
+    .rhero{
+        display: none;
+    }
+    .fd{
+        background-color: #242424;
+    }
+    .fb{
+        background-color: green;
+    }
+    nav .ni{
+        display: none;
+    }
+    footer .ni{
+        display: none;
+    }
+    .fd{
+        display: block;
+    }
+    .ff{
+        width: 100%;
+        display: block;
+    }
+    .fa{
+        color:  white;
+    }
+    .ng{
+        gap: 0;
+    }
+    .nb{
+        margin-left: 5px;
+    }
+}

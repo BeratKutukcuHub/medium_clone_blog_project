@@ -1,0 +1,129 @@
+.c{
+    background-color: #242424;
+}
+.bci{
+    object-fit: cover;
+}
+.nc{
+    width: 100%;
+    margin: auto;
+    height: 86.5px;
+}
+.hr{
+    width: 100%;
+    background-color: white;
+    height: 1px;
+}
+.nbb{
+    background-color: rgba(255, 255, 255, 0.795);
+}
+.nbb:hover{
+    background-color: white;
+}
+.ng{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-basis: 15%;
+}
+.bgc{
+    background-color: #242424;
+}
+.cc{
+    color: #242424;
+}
+.nt{
+    margin-left: 20px;
+    flex-basis: 85%;
+    font-size: 1.8rem;
+    letter-spacing: -1.6px;
+}
+.ngb{
+    font-size: 0.9rem;
+    letter-spacing: -1.2px;
+    font-weight: 600;
+    width: 77px;
+    padding: 2px 10px;
+    height: 35px;
+    border-radius: 30px;
+    border: 1px solid white;
+}
+.sd{
+    margin: 100px 22px 0px 20px;
+    width: 65%;
+}
+.sdt{
+    width: 50%;
+}
+.sdt h1{
+    
+    font-size: 4.5rem;
+}
+.s{
+    width: 65%;
+}
+.si{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    min-height: 194px;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+}
+.si:hover {
+    background-color: white;
+}
+.si:hover h1{
+    color: #242424;
+}
+.si h1{
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 4rem;
+    font-weight: 300;
+}
+.mw{
+    min-width: 600px;
+}
+.st{
+    margin-top: 10px;
+    width: 64%;
+    min-width: 600px;
+    font-size: 1.3rem;
+    word-spacing: 2px;
+    font-weight: 380;
+}
+.si .sic{
+    font-size: 85px;
+    margin-right: 20px;
+}
+.si:hover .sic{
+    color: #242424;
+}
+.stc{
+    display: inline;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.5rem;
+    word-spacing: 1.5px;
+    font-weight: 300;
+    line-height: 34px;
+}
+
+@media (max-width:700px) {
+    .sd{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .st{
+        width: 98%;
+    }
+    .s {
+        width: 98%;
+    }
+}

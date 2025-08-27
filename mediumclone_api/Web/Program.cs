@@ -7,6 +7,7 @@ builder.Services.AddControllers().AddApplicationPart(typeof(UserController).Asse
 builder.Services.AddRouting();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.UtilitiesServices();
+builder.Services.CorsService();
 builder.AuthenticationService();
 builder.Services.AddAuthorization();
 builder.Services.AddHttpContextAccessor();
@@ -14,16 +15,14 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpsRedirection(config => config.HttpsPort = 7232);
 builder.Services.AddMemoryCache();
 builder.Services.AddRateLimiter();
-builder.Services.AddCookiePolicy(config =>
-{
-    config.HttpOnly = Microsoft.AspNetCore.CookiePolicy.HttpOnlyPolicy.Always;
-    config.Secure = CookieSecurePolicy.SameAsRequest;
-});
+
 builder.Services.SupportingLibrariesServices();
 builder.Services.AllServices();
 var app = builder.Build();
 
 app.UseRouting();
+app.UseCors();
+app.UseCookiePolicy();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseRateLimiter();
@@ -37,7 +36,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 
 app.Run();
 

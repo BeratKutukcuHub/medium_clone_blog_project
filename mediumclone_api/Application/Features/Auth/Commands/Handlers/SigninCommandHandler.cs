@@ -2,12 +2,13 @@ using AutoMapper;
 using Isopoh.Cryptography.Argon2;
 using MediatR;
 using mediumclone_api.Application.Utilities;
+using mediumclone_api.Common.Shared;
 using mediumclone_api.Domain.Entities;
 using mediumclone_api.Infrastructure.Interfaces;
 
 namespace mediumclone_api.Application.Features.Auth.Commands.Handlers
 {
-    public class SigninCommandHandler : IRequestHandler<SigninCommand, string>
+    public class SigninCommandHandler : IRequestHandler<SigninCommand, TokenAndClaim>
     {
         private readonly TokenService _tokenGenerator;
         private readonly IUserRepository _user;
@@ -17,14 +18,19 @@ namespace mediumclone_api.Application.Features.Auth.Commands.Handlers
             _user = user;
             _tokenGenerator = tokenGenerator;
         }
-        public async Task<string> Handle(SigninCommand request, CancellationToken cancellationToken)
+        public async Task<TokenAndClaim> Handle(SigninCommand request, CancellationToken cancellationToken)
         {
             var responses = await _user.GetEntities();
             foreach (var user in responses)
             {
                 if (user.Username == request.UserName.Trim() && Argon2.Verify(user.PasswordHash, request.PasswordHash))
                 {
-                    return _tokenGenerator.GetToken(user);
+                    var tokenGenerator = _tokenGenerator.GetToken(user);
+                    return new TokenAndClaim
+                    {
+                        Claims = tokenGenerator.claims,
+                        Token = tokenGenerator.token
+                    };
                 }
             }
             throw new Exception("Not found the user");

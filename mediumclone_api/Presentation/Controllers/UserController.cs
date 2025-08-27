@@ -1,6 +1,7 @@
 using MediatR;
 using mediumclone_api.Application.Features.Users.Commands;
 using mediumclone_api.Application.Features.Users.Queries;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace mediumclone_api.Presentation.Controllers;
@@ -14,7 +15,7 @@ public class UserController : ControllerBase
     {
         _mediator = mediator;
     }
-
+    [Authorize(Roles = "User")]
     [HttpGet]
     public async Task<IActionResult> GetAllUserEntities()
     {

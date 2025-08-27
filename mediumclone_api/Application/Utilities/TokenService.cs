@@ -61,10 +61,13 @@ namespace mediumclone_api.Application.Utilities
             );
             return theToken;
         }
-        public string GetToken(User user)
+        public (string token, List<Claim> claims) GetToken(User user)
         {
             var token = TokenFactory(user);
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return (
+                token: new JwtSecurityTokenHandler().WriteToken(token),
+                claims: (List<Claim>)token.Claims
+            );
         }
     }
 }
