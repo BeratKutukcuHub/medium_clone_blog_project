@@ -8,9 +8,32 @@
 .open{
     z-index: 999999999;
 }
+.ep{
+    padding: 45px 0px;
+}
+.ec h6{
+    font-size: 0.9rem;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+.ei{
+    background-color:rgba(235, 235, 235, 1) ;
+}
+.ei:focus{
+    background-color: white !important;
+}
+.eb:hover{
+    background-color: black !important;
+}
 .pd{
     width: 678px;
     height: 480px;
+    background-color: white;
+    border-radius: 5px;
+}
+.pd2{
+    width: 678px;
+    height: auto;
     background-color: white;
     border-radius: 5px;
 }
@@ -60,4 +83,47 @@
     text-align: center;
     line-height: 25px;
     color: rgba(0, 0, 0, 0.603);
+}
+.acbp{
+    border: none;
+    outline: none;
+}
+.acba{
+    border: 0.2px solid black;
+}
+.bd{
+    border: 1px solid #242424;
+}
+.acabgp{
+    border-radius:20px;
+    padding:8px 10px;
+    border:none;
+    color:white;
+    background-color:rgba(221, 221, 221, 1);
+    pointer-events:none;
+}
+.acabga{
+    border-radius:20px;
+    padding:8px 10px;
+    border: none;
+    color: white;
+    background-color:#242424 !important;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.ac{
+    caret-color: transparent;
+    width: 40px;
+    height: auto;
+    border-radius: 6px;
+    border:"none";
+    background-color:rgb(243, 243, 243);
+    color:"black";
+    font-size:2.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+.no-click{
+    background-color: rgba(221, 221, 221, 1) !important;
+    pointer-events: none;
 }

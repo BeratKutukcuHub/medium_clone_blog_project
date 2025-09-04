@@ -1,5 +1,8 @@
 .c{
-    background-color: #242424;
+    background-color: #242424 !important;
+}
+.fc {
+    background: white !important;
 }
 .bci{
     object-fit: cover;
@@ -15,7 +18,7 @@
     height: 1px;
 }
 .nbb{
-    background-color: rgba(255, 255, 255, 0.795);
+    background-color: rgba(255, 255, 255, 0.866);
 }
 .nbb:hover{
     background-color: white;

@@ -4,6 +4,7 @@ using System.Text;
 using mediumclone_api.Domain.Entities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using MongoDB.Driver.Linq;
 
 namespace mediumclone_api.Application.Utilities
 {
@@ -34,7 +35,7 @@ namespace mediumclone_api.Application.Utilities
         {
             var options = _configurationService.GetSection("JwtOptions");
             DateTime expireTime = DateTime.UtcNow.AddHours(Convert.ToDouble(options["Expire"]));
-            
+
             var claimList = TokenClaims(_user, expireTime.ToString() ?? "");
             return (
                 issuer: options["Issuer"] ?? "",
@@ -68,6 +69,43 @@ namespace mediumclone_api.Application.Utilities
                 token: new JwtSecurityTokenHandler().WriteToken(token),
                 claims: (List<Claim>)token.Claims
             );
+        }
+        public string GetToken()
+        {
+            var options = _configurationService.GetSection("JwtOptions");
+            var secretKey = options["SecretRefreshToken"];
+            var refrehToken = new JwtSecurityToken(
+                issuer: null,
+            audience: null,
+            claims: null,
+            notBefore: DateTime.UtcNow,
+            expires: DateTime.UtcNow.AddDays(40),
+            signingCredentials: new SigningCredentials(
+                new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
+                SecurityAlgorithms.HmacSha256
+            ));
+            return new JwtSecurityTokenHandler().WriteToken(refrehToken);
+        }
+        public bool ValidateRefreshToken(string refreshToken)
+        {
+            var options = _configurationService.GetSection("JwtOptions");
+            var secretKey = options["SecretRefreshToken"];
+            var validation = new TokenValidationParameters()
+            {
+                ValidateLifetime = true,
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey =  new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+            };
+            try
+            {
+                var handler = new JwtSecurityTokenHandler();
+                handler.ValidateToken(refreshToken, validation, out SecurityToken validatedToken);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

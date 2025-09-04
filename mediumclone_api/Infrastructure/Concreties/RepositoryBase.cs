@@ -42,7 +42,6 @@ public class RepositoryBase<T> : IRepositoryBase<T> where T : BaseEntity
     public async Task InsertEntity(T entity)
     {
         entity.Id = ObjectId.GenerateNewId().ToString();
-        HasherPassword.Hash(entity);
         await _collection.InsertOneAsync(entity);
     }
     public async Task UpdateEntiy(string Id , T newlyEntity)

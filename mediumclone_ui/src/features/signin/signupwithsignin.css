@@ -1,0 +1,16 @@
+.ap{
+    margin-bottom: 10px;
+    border:none;
+    width:300px;
+    border-radius:20px;
+    padding:10px 0px;
+    color:white;
+}
+.p{
+    pointer-events: none;
+    background-color:rgb(217, 217, 217);
+}
+.a{
+    pointer-events: auto;
+    background-color:rgba(25,25,25);
+}

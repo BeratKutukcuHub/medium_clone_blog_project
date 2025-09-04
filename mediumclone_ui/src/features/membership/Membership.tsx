@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Sections } from "./components/sections";
 import { FaStar } from "react-icons/fa";
 import { FcOk } from "react-icons/fc";
@@ -6,17 +6,14 @@ import { BsBalloonHeart } from "react-icons/bs";
 import "./mermbership.css";
 import { Signup } from "../../shared/components/Signup";
 import { Signin } from "../../shared/components/Signin";
+import { SignupContext } from "../../shared/hooks/SignupContext";
+import { SigninContext } from "../../shared/hooks/SigninContext";
 
 export const Membership = () => {
-    const [pop, setPop] = useState(false);
-    const [popSignin, setSigninPop] = useState(false);
+    const {isPop, setPop} = useContext(SignupContext);
+    const {isPopin , setPopin, setContent, content} = useContext(SigninContext);
+    setContent("Welcome back.");
     
-    const handlePop = (value : boolean) => {
-        setPop(value);
-    }
-    const handleSigninPop = (value : boolean) => {
-        setSigninPop(value);
-    } 
     const classNameBottomSection : string = 
     "d-flex flex-column align-items-start justify-content-center p-5 bsmrl bsc gap-2";
     const linearList : string[] = [
@@ -41,20 +38,20 @@ export const Membership = () => {
     }, []); 
     return (
         <>
-            {pop? <Signup handlePop={handlePop}/> : ""}
-            {popSignin? <Signin handlePop={handleSigninPop}/> : ""}
-            <nav className="w-100 position-fixed " style={{zIndex:"9999"}}>
+            {isPop? <Signup popState={isPop} handlePopSwitch={setPop}/> : ""}
+            {isPopin? <Signin isPopin={isPopin} setPopin={setPopin} content={content}/> : ""}
+            <nav className="w-100 position-fixed bg-white" style={{zIndex:"9999"}}>
                 <div className="d-flex justify-content-between nc">
                     <h1 className="nt">Medium</h1>
                     <div className="ng">
-                        <button className="nb lnb" onClick={()=> setSigninPop(true)}>Sign in</button>
+                        <button className="nb lnb" onClick={()=> setPopin(true)}>Sign in</button>
                         <button className="nb rnb" onClick={()=> setPop(true)}>Sign up</button>
                     </div>
                 </div>
                 <div className="hr"></div>
             </nav>
 
-            <section className="sc container-fluid overflow-hidden" style={{backgroundColor:`${linear}`,height:"auto",paddingTop:"80px"}}>
+            <section className="sc container-fluid overflow-hidden bgw" style={{backgroundColor:`${linear}`,height:"auto",paddingTop:"80px"}}>
                 <div className="row" style={{}}>
                     <div className={`col-xl-8 col-lg-7 col-md-6 tb slide `} style={{paddingBottom:"50px"}}>
                         <h2 className="sml smt">
@@ -323,7 +320,8 @@ export const Membership = () => {
                 </div>
             </section>
             
-            <footer className="d-flex justify-content-center w-100 " style={{borderTop:"1px solid black", height:"86.5px"}}>
+            <footer className="d-flex justify-content-center w-100 ng" style={{borderTop:"1px solid black", height:"86.5px"
+            }}>
                 <div className="d-flex justify-content-between align-items-center" style={{width:"100%"}}>
                     <div>
                     <h4 className="nt">Medium</h4>

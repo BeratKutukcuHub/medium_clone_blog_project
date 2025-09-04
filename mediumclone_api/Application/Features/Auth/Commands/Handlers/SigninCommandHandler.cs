@@ -1,9 +1,6 @@
-using AutoMapper;
-using Isopoh.Cryptography.Argon2;
 using MediatR;
 using mediumclone_api.Application.Utilities;
 using mediumclone_api.Common.Shared;
-using mediumclone_api.Domain.Entities;
 using mediumclone_api.Infrastructure.Interfaces;
 
 namespace mediumclone_api.Application.Features.Auth.Commands.Handlers
@@ -23,13 +20,15 @@ namespace mediumclone_api.Application.Features.Auth.Commands.Handlers
             var responses = await _user.GetEntities();
             foreach (var user in responses)
             {
-                if (user.Username == request.UserName.Trim() && Argon2.Verify(user.PasswordHash, request.PasswordHash))
+                if (user.Username == request.UserName.Trim() && user.Email == request.Email.Trim())
                 {
                     var tokenGenerator = _tokenGenerator.GetToken(user);
+                    var refreshToken = _tokenGenerator.GetToken();
                     return new TokenAndClaim
                     {
                         Claims = tokenGenerator.claims,
-                        Token = tokenGenerator.token
+                        Token = tokenGenerator.token,
+                        RefreshToken = refreshToken
                     };
                 }
             }

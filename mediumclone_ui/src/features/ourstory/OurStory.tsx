@@ -1,16 +1,30 @@
 import { GoArrowRight } from "react-icons/go";
 import "./ourstory.css"
+import { useContext } from "react";
+import { SigninContext } from "../../shared/hooks/SigninContext";
+import { SignupContext } from "../../shared/hooks/SignupContext";
+import { Signin } from "../../shared/components/Signin";
+import { Signup } from "../../shared/components/Signup";
 
 export const OurStory = () => {
-        
+    const {content ,isPopin ,setContent ,setPopin} = useContext(SigninContext);
+    const {isPop , setPop} = useContext(SignupContext);
     return (
-            <div className="w-100 h-100 d-flex flex-column position-relative z-3 c">
+            <div className="w-100 h-100 d-flex flex-column position-relative z-3 c ">
+                {isPopin? <Signin content={content} isPopin={isPopin} setPopin={setPopin}/> : ""}
+                {isPop? <Signup handlePopSwitch={setPop} popState={isPop}/> : ""}
+
                 <img src="images/mediumclone_ourstory.webp" className="position-absolute w-100 h-100 z-n1 bci"/>
-                <nav className="nc d-flex align-items-center justify-content-between ">
+                <nav className="nc d-flex align-items-center justify-content-between c">
                     <h1 className="text-white nt">Medium</h1>
                     <div className="ng">
-                        <button className="ngb bgc text-white">Sign in</button>
-                        <button className="ngb nbb cc">Sign up</button>
+                        <button className="ngb bgc text-white" onClick={()=> {
+                            setContent("Welcome back.");
+                            setPopin(true);
+                        }}>Sign in</button>
+                        <button className="ngb nbb cc" onClick={()=>{
+                            setPop(true);
+                        }}>Sign up</button>
                     </div>
                 </nav>
                 <div className="hr"></div>
@@ -62,6 +76,21 @@ export const OurStory = () => {
                     </section>
                     
                 </div>
+                <footer className="d-flex justify-content-center w-100 fc" style={{borderTop:"1px solid black", height:"86.5px"}}>
+                <div className="d-flex justify-content-between align-items-center" style={{width:"100%"}}>
+                    <div>
+                    <h4 className="nt">Medium</h4>
+                    </div>
+                <div className="d-flex justify-content-center gap-2" style={{marginTop:"10px"}}>
+                    <h6 style={{fontSize:"0.8rem",opacity:"0.85", textDecoration:"underline",cursor:"pointer"}}></h6>
+                    <h6 style={{fontSize:"0.8rem",opacity:"0.85", textDecoration:"underline",cursor:"pointer"}}>Terms</h6>
+                    <h6 style={{fontSize:"0.8rem",opacity:"0.85", textDecoration:"underline",cursor:"pointer"}}>Privacy</h6>
+                    <h6 style={{fontSize:"0.8rem",opacity:"0.85", textDecoration:"underline",cursor:"pointer"}}>Help</h6>
+                    <h6 style={{fontSize:"0.8rem",opacity:"0.85", textDecoration:"underline",cursor:"pointer"}}>Teams</h6>
+                    <h6 style={{fontSize:"0.8rem",opacity:"0.85", textDecoration:"underline",cursor:"pointer",marginRight:"30px"}}>Press</h6>
+                </div>
+                </div>
+            </footer>
             </div>
     );
 }

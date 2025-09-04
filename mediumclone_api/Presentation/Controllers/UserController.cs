@@ -22,24 +22,28 @@ public class UserController : ControllerBase
         var response = await _mediator.Send(new GetAllUserQuery());
         return Ok(response);
     }
+    [Authorize(Roles = "User")]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(string id)
     {
         var response = await _mediator.Send(new GetByIdUserQuery { Id = id });
         return Ok(response);
     }
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     public async Task<IActionResult> CreateUser(CreateUserCommand createUserCommand)
     {
         var response = await _mediator.Send(createUserCommand);
         return Ok(new { Message = "The user created", Response = response });
     }
+    [Authorize(Roles = "Admin")]
     [HttpPut]
     public async Task<IActionResult> UpdateUser(UpdateUserCommand updateUserCommand)
     {
         var id = await _mediator.Send(updateUserCommand);
         return Ok(id);
     }
+    [Authorize(Roles = "Admin")]
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteUser(string id)
     {

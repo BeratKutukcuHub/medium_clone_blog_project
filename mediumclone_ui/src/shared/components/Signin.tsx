@@ -1,27 +1,23 @@
-import { useEffect, useState } from "react";
 import { CiMail } from "react-icons/ci";
 import { FaFacebook } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./signin.css";
-export const Signin = ({handlePop} : {handlePop : (arg : boolean)=> void}) => {
-
-    const [openPop , setPop] = useState(true);
-        console.log(openPop);
-        useEffect(()=>{
-            handlePop(openPop);
-
-        },[openPop]);
+export const Signin = ({setPopin, isPopin,
+     content
+} : {setPopin : (arg : boolean)=> void, isPopin : boolean, content : string
+}) => {
+    
 
     return (
         <>
-        <div className={`pc position-fixed ${openPop?"d-flex":"d-none"} justify-content-center align-items-center open`} 
-                    onClick={()=>setPop(false)}
+        <div className={`pc position-fixed ${isPopin?"d-flex":"d-none"} justify-content-center align-items-center open`} 
+                    onClick={()=>setPopin(false)}
                     >
                             <div className="pd d-flex flex-column  align-items-center justify-content-start gap-4 popup"
                             onClick={(e) => e.stopPropagation()}>
-                                <h1 className="mt-5">Welcome back.</h1>
+                                <h1 className="mt-5">{content}</h1>
                                 <div className="oauthg">
                                     <div className="poa">
                                         <FcGoogle className="pi"/>

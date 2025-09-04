@@ -6,7 +6,7 @@ using mediumclone_api.Infrastructure.Interfaces;
 
 namespace mediumclone_api.Application.Features.Auth.Commands.Handlers
 {
-    public class SignupCommandHandler : IRequestHandler<SignupCommand,Unit>
+    public class SignupCommandHandler : IRequestHandler<SignupCommand,SignupCommand>
     {
         private readonly IMapper _mapper;
         private readonly IUserRepository _user;
@@ -17,11 +17,12 @@ namespace mediumclone_api.Application.Features.Auth.Commands.Handlers
             _user = user;
         }
 
-        public async Task<Unit> Handle(SignupCommand request, CancellationToken cancellationToken)
+        public async Task<SignupCommand> Handle(SignupCommand request, CancellationToken cancellationToken)
         {
             var user = _mapper.Map<User>(request);
             await _user.InsertEntity(user);
-            return Unit.Value;
+            return _mapper.Map<SignupCommand>(user);
         }
+
     }
 }
