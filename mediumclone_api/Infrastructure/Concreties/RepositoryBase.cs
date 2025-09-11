@@ -10,7 +10,7 @@ namespace mediumclone_api.Infrastructure.Concreties;
 
 public class RepositoryBase<T> : IRepositoryBase<T> where T : BaseEntity
 {
-    private readonly IMongoCollection<T> _collection;
+    protected readonly IMongoCollection<T> _collection;
     private readonly MongoDbContext _mongoDb;
 
     public RepositoryBase(MongoDbContext mongoDb)

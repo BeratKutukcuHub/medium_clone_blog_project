@@ -1,0 +1,25 @@
+.abbar{
+    width: 100%;
+}
+.abbari h6{
+    font-size: 0.9rem;
+    color: #242424;
+    line-height: 50px;
+    margin-bottom: 0px;
+    opacity: 0.6;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    border-bottom: 1px solid black;
+}
+
+main {
+    display:flex;
+    transition:all 0.8s ease;
+}
+.b{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top:2px solid black ;
+}

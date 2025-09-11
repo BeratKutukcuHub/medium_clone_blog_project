@@ -1,19 +1,19 @@
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { GiBlackBook } from "react-icons/gi";
 import { useRef, useState } from "react";
 import { LiaAtomSolid } from "react-icons/lia";
 import { AiOutlineLike } from "react-icons/ai";
 import { AiOutlineDislike } from "react-icons/ai";
 import "./signupwithsignin.css"
-import { useRefreshMutation, useSigninMutation, useSignupMutation } from "../../app/slices/AuthService";
+import { useSigninMutation, useSignupMutation } from "../../app/slices/AuthService";
 interface TagAndIndex  {
     tagName : string,
     index : number
 }
 export const SignupWithSignin = ( ) => {
+    const navigate = useNavigate();
     const [signup] = useSignupMutation();
     const [signin] = useSigninMutation();
-    const [refresh] = useRefreshMutation();
     const [userName, setUserName] = useState("");
     const buttonRef = useRef<HTMLButtonElement>(null);
     const tagSName  = () : string => crypto.randomUUID().substring(0,10);
@@ -60,7 +60,8 @@ export const SignupWithSignin = ( ) => {
                         email : param.email,
                         userName : userName
                     }).unwrap();
-                    console.log(token);
+                    localStorage.setItem("x-token",token);
+                    navigate("/medium");
                 }
             }
         }
