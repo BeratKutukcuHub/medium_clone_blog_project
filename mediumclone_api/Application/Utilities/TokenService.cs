@@ -20,6 +20,7 @@ namespace mediumclone_api.Application.Utilities
         {
             var claims = new List<Claim>()
             {
+                new Claim(ClaimTypes.NameIdentifier, _user.Id),
                 new Claim(ClaimTypes.Name , _user.Username),
                 new Claim(ClaimTypes.Country , "Turkey"),
                 new Claim(ClaimTypes.Email , _user.Email),
@@ -75,11 +76,11 @@ namespace mediumclone_api.Application.Utilities
             var options = _configurationService.GetSection("JwtOptions");
             var secretKey = options["SecretRefreshToken"];
             var refrehToken = new JwtSecurityToken(
-                issuer: null,
+            issuer: null,
             audience: null,
             claims: null,
             notBefore: DateTime.UtcNow,
-            expires: DateTime.UtcNow.AddDays(40),
+            expires: DateTime.UtcNow.AddDays(7),
             signingCredentials: new SigningCredentials(
                 new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey)),
                 SecurityAlgorithms.HmacSha256

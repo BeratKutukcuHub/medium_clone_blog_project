@@ -7,7 +7,7 @@ using mediumclone_api.Infrastructure.Interfaces;
 
 namespace mediumclone_api.Application.Features.Post.Commands.Handlers
 {
-    public class GetAllPostQueryHandler : IRequestHandler<GetAllPostQuery, IEnumerable<PostGetAllDto>>
+    public class GetAllPostQueryHandler : IRequestHandler<GetAllPostQuery, IEnumerable<PostGetDto>>
     {
         private IMapper _mapper;
         private IPostRepository _postRepository;
@@ -18,10 +18,10 @@ namespace mediumclone_api.Application.Features.Post.Commands.Handlers
             _postRepository = postRepository;
         }
 
-        public async Task<IEnumerable<PostGetAllDto>> Handle(GetAllPostQuery request, CancellationToken cancellationToken)
+        public async Task<IEnumerable<PostGetDto>> Handle(GetAllPostQuery request, CancellationToken cancellationToken)
         {
             var posts = await _postRepository.GetEntities();
-            return _mapper.Map<List<PostGetAllDto>>(posts);
+            return _mapper.Map<List<PostGetDto>>(posts);
         }
     }
 }

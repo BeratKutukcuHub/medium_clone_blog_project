@@ -18,8 +18,7 @@ main {
 }
 .b{
     position: absolute;
-    bottom: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     border-top:2px solid black ;
 }

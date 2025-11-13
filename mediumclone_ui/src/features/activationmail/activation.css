@@ -1,0 +1,38 @@
+.actc{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+.actcc{
+    width: 80%;
+    height: 80%;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    font-weight: 100;
+    color: white;
+    cursor: default;
+    padding: 100px 0px;
+    border-radius: 5px;
+    animation: moveBox 3s infinite alternate;
+    transition: all 0.3s;
+    background: linear-gradient(270deg, #7c857f, #6f10d5);
+    background-size: 200% 200%;
+}
+@keyframes moveBox {
+    0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

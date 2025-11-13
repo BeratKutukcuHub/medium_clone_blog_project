@@ -3,12 +3,29 @@ import { CiSearch } from "react-icons/ci";
 import { TfiWrite } from "react-icons/tfi";
 import { GoBell } from "react-icons/go";
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { clearUser } from "../../app/slices/UserSlice";
+import { useLogoutMutation } from "../../app/services/AuthService";
+import type { RootState } from "../../app/store";
+
 export const Navbar = ({handleClick} : {handleClick : (state : boolean) => void}) => {
+    const [logout] = useLogoutMutation();
+    const selectorUser = useSelector((state : RootState)=> state.user);
     const [isClick , setClick] = useState(false);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     
+    const handleLogout = () => {
+        logout({Id : selectorUser.user?.id??""});
+        localStorage.removeItem("user");
+        localStorage.removeItem("email");
+        dispatch(clearUser());
+        navigate("/");
+    }
     return (
         <nav className="w-100 d-flex justify-content-between align-items-center position-fixed" 
-        style={{borderBottom:"1px solid rgba(230, 230, 230, 1)",height:"60px",zIndex:"99999999"}}>
+        style={{borderBottom:"1px solid rgba(230, 230, 230, 1)",height:"60px",zIndex:"99999999",backgroundColor:"white"}}>
             <div className="d-flex align-items-center" style={{marginLeft:"18px",
                 gap:"10px"
             }}>
@@ -36,14 +53,19 @@ export const Navbar = ({handleClick} : {handleClick : (state : boolean) => void}
                 </div>
             </div>
             <div className="d-flex align-items-center gap-4">
-                <div style={{display:"flex",alignItems:"center" ,gap:"15px",marginRight:"20px",color:"rgba(65, 65, 65, 1)"}}>
+                <Link to={"/write"} 
+                style={{display:"flex",textDecoration:"none",
+                alignItems:"center" ,gap:"15px",marginRight:"20px",color:"rgba(65, 65, 65, 1)"}}>
                     <TfiWrite style={{fontSize:"1.5rem",opacity:"0.5"}}/>
-                    Write
-                </div>
+                    <h5 style={{fontSize:"0.9rem",margin:"5px 0px 0px 0px"}}>Write</h5>
+                </Link>
                 <div>
                     <GoBell fontSize={"1.5rem"} style={{fontWeight:"100",fill:"rgba(123, 123, 123, 1)"}}/>
                 </div>
-                <div style={{width:"25px",height:"25px",borderRadius:"50%", backgroundColor:"black",marginRight:"25px"}}></div>
+                <div onClick={handleLogout} style={{width:"25px",height:"25px",borderRadius:"50%", backgroundColor:"rgba(141, 42, 42, 1)",
+                    cursor:"pointer",textAlign:"center",marginRight:"25px"}}>
+                    ❌
+                </div>
             </div>
         </nav>
     )

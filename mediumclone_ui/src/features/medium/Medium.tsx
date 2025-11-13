@@ -3,8 +3,10 @@ import { Navbar } from "../../shared/layout/Navbar"
 import { Sidebar } from "../../shared/layout/Sidebar"
 import { RSidebar } from "../../shared/layout/RSidebar";
 import "./medium.css"
+import { PostList } from "./components/PostList";
 export const Medium = () => {
     const [isClick, setClick] = useState<boolean>(false);
+    
     const stylesActive = ["1 1 auto", "0 0 20%"];
     const stylesPassive = ["1 1 auto", "0 0 25%"];
     const isClicked = (state : boolean) => setClick(state);
@@ -45,8 +47,8 @@ export const Medium = () => {
     </div>
     </div>
     
-    
-    
-    
+        <div style={{marginLeft:isClick?"280px":"10px",transition:"all 0.7s"}}>
+            <PostList/>
+        </div>
     </div>
 }

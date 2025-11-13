@@ -44,6 +44,12 @@ public class RepositoryBase<T> : IRepositoryBase<T> where T : BaseEntity
         entity.Id = ObjectId.GenerateNewId().ToString();
         await _collection.InsertOneAsync(entity);
     }
+    public async Task<string> InsertEntityIdResponse(T entity)
+    {
+        entity.Id = ObjectId.GenerateNewId().ToString();
+        await _collection.InsertOneAsync(entity);
+        return entity.Id;
+    }
     public async Task UpdateEntiy(string Id , T newlyEntity)
     {
         if (!ObjectId.TryParse(Id, out _))

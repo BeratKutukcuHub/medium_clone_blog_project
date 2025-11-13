@@ -1,9 +1,19 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text.Json;
 using AutoMapper;
 using MediatR;
 using mediumclone_api.Application.Features.Auth.Commands;
-using mediumclone_api.Common.Shared;
+using mediumclone_api.Application.Features.Profiles;
+using mediumclone_api.Application.Utilities;
+using mediumclone_api.Domain.Entities;
+using mediumclone_api.Infrastructure.Concreties;
+using mediumclone_api.Infrastructure.Interfaces;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace mediumclone_api.Presentation.Controllers
 {
@@ -11,55 +21,80 @@ namespace mediumclone_api.Presentation.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly IMediator _mediatr;
-        private readonly IHttpContextAccessor _httpContext;
-        private readonly IMapper _mapper;
-        public AuthController(IMediator mediatr, IHttpContextAccessor httpContext, IMapper mapper)
+        TokenService _tokenService;
+        IHttpContextAccessor _httpContextAccessor;
+        IMediator _mediator;
+        IMapper _mapper;
+        public AuthController(TokenService tokenService, IMediator mediator,
+         IHttpContextAccessor httpContextAccessor, IMapper mapper)
         {
-            _mediatr = mediatr;
-            _httpContext = httpContext;
+            _tokenService = tokenService;
+            _mediator = mediator;
+            _httpContextAccessor = httpContextAccessor;
             _mapper = mapper;
         }
 
-        [HttpPost("Signin")]
-        public async Task<IActionResult> Signin(SigninCommand signinDto)
+        [HttpPost("signupverify")]
+        public async Task<IActionResult> SignupWithVerify(ActivateSignupCommand activateSignupCommand)
         {
-            var response = await _mediatr.Send(signinDto);
-            _httpContext?.HttpContext?.Response.Cookies.Append(
-            "x-refreshtoken",
-            response.RefreshToken,
+            User response = await _mediator.Send(activateSignupCommand);
+            if (response != null)
+            {
+                _httpContextAccessor.HttpContext.Response.Cookies.Append("x-token",
+                _tokenService.GetToken(response).token, new CookieOptions
+                {
+                    HttpOnly = true,
+                    Secure = true,
+                    SameSite = SameSiteMode.None,
+                    Expires = DateTimeOffset.UtcNow.AddDays(7)
+                });
+                return Ok(response);
+            }
+            return BadRequest();
+        }
+        [HttpPost("signup")]
+        public async Task<IActionResult> Signup(SignupCommand signupCommand)
+        {
+            var signup = await _mediator.Send(signupCommand);
+            var user = _mapper.Map<User>(signup);
+            _httpContextAccessor.HttpContext.Response.Cookies.Append("x-token", _tokenService.GetToken(user).token,
             new CookieOptions
             {
                 HttpOnly = true,
-                Expires = DateTime.UtcNow.AddDays(40),
-                Secure = false, 
-                SameSite = SameSiteMode.None 
+                Secure = true,
+                SameSite = SameSiteMode.None,
+                Expires = DateTime.UtcNow.AddMinutes(60)
             });
-            return Ok(new { Token = response.Token });
+            return Ok(signup);
         }
-        [HttpPost("Refresh")]
-        public async Task<IActionResult> Refresh(RefreshTokenUserInformation userInfo)
+        [HttpPost("signin")]
+        public async Task<IActionResult> Signin(SigninCommand signinCommand)
         {
-            string refreshToken = _httpContext?.HttpContext?.Request?.Cookies["x-refreshtoken"];
-            if (refreshToken is null)
-                return Unauthorized();
-            var responseValidate = await _mediatr.Send(_mapper.Map<RefreshTokenCommand>(userInfo));
-            if (!responseValidate.isExpire)
-                return Unauthorized();
-            return Ok(responseValidate.Token);
+            var signin = await _mediator.Send(signinCommand);
+            var user = _mapper.Map<User>(signin);
+            _httpContextAccessor.HttpContext.Response.Cookies.Append("x-token", _tokenService.GetToken(user).token,
+            new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.None,
+                Expires = DateTime.UtcNow.AddMinutes(60)
+            });
+            return signin != null ? Ok(signin) : NotFound();
         }
-        [HttpPost("Signup")]
-        public async Task<IActionResult> Signup(SignupCommand signUpDto)
+        [Authorize(Policy = "Policy", Roles = "User")]
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout(LogoutCommand logoutCommand)
         {
-            var response = await _mediatr.Send(signUpDto);
-            return Ok(response);
+            var response = await _mediator.Send(logoutCommand);
+            return response ? Ok() : Unauthorized(); 
         }
-        [HttpPost("SignupMail")]
-        public async Task<IActionResult> SignupMail(SignupMailCommand signupMailCommand)
+        [Authorize(Policy = "Policy", Roles = "User")]
+        [HttpPost("me")]
+        public async Task<IActionResult> MeAsync(MeCommand meCommand)
         {
-            var code = await _mediatr.Send(signupMailCommand);
-            return Ok(code);
+            var responseCheck = await _mediator.Send(meCommand);
+            return responseCheck.isOk ? Ok(responseCheck.User) : Unauthorized();
         }
-        
     }
 }

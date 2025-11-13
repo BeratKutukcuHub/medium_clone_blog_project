@@ -1,0 +1,1538 @@
+  {
+  "Aşk": [
+    "sevgi", "aşk", "ilişki", "aşık", "kalp", "romantik", "sevgili", "duygu", "özlem", "flört"
+  ],
+  "Aile": [
+    "anne", "baba", "çocuk", "ebeveyn", "akraba", "aile", "yuva", "kardeş", "aile bağları", "akrabalık"
+  ],
+  "Astroloji": [
+    "burç", "yıldız", "astroloji", "koç", "boğa", "ikizler", "yengeç", "aslan", "başak", "terazi", "akrep", "yay", "oğlak", "kova", "balık"
+  ],
+  "Atatürk": [
+    "atatürk", "mustafa kemal", "cumhuriyet", "inkılap", "devrim", "nutuk", "ankara", "bağımsızlık", "ulusal egemenlik"
+  ],
+  "Avrupa": [
+    "avrupa", "avrupa birliği", "ab", "fransa", "almanya", "italya", "ispanya", "hollanda", "isveç", "norveç", "ingiltere"
+  ],
+  "Akademi": [
+    "üniversite", "araştırma", "tez", "öğrenci", "bilim insanı", "makale", "akademisyen", "akademi", "bilimsel", "laboratuvar"
+  ],
+  "Ankara": [
+    "ankara", "başkent", "çankaya", "kızılay", "bahçelievler", "keçiören", "çubuk", "polatlı", "etlik", "etimesgut"
+  ],
+  "Ağ Teknolojileri": [
+    "ağ", "network", "tcp", "ip", "router", "switch", "ethernet", "sunucu", "vpn", "lan", "wan", "firewall"
+  ],
+  "Animasyon": [
+    "animasyon", "çizgi film", "3d", "karakter", "modelleme", "blender", "pixar", "disney", "canlandırma", "motion"
+  ],
+  "Arkeoloji": [
+    "arkeoloji", "kazı", "tarih öncesi", "fosil", "antik", "eser", "arkeolog", "müze", "tarih", "medeniyet"
+  ],
+  "Astronomi": [
+    "uzay", "yıldız", "gezegen", "evren", "kara delik", "güneş", "ay", "mars", "gökbilim", "teleskop", "astronomi"
+  ],
+  "Avukatlık": [
+    "avukat", "hukuk", "mahkeme", "dava", "yargı", "adalet", "savunma", "anayasa", "hakim", "savcı", "kanun"
+  ],
+  "Alışkanlıklar": [
+    "alışkanlık", "rutin", "motivasyon", "disiplin", "zaman yönetimi", "gelişim", "alışkanlık kazanmak", "davranış", "düzenli yaşam"
+  ],
+  "Anime": [
+    "anime", "manga", "japonya", "naruto", "one piece", "attack on titan", "bleach", "demon slayer", "stüdyo ghibli"
+  ],
+  "Akıl Sağlığı": [
+    "psikoloji", "depresyon", "anksiyete", "terapi", "psikiyatri", "zihinsel sağlık", "duygusal denge", "travma", "motivasyon"
+  ],
+  "Aksiyon": [
+    "film", "aksiyon", "macera", "silah", "kovalama", "kahraman", "savaş", "gerilim", "kurgu", "sinema"
+  ],
+  "Algoritma": [
+    "algoritma", "veri yapısı", "yapay zeka", "programlama", "kod", "hesaplama", "c#", "python", "javascript", "problem çözme"
+  ],
+  "Bilim": [
+    "bilim", "deney", "teori", "hipotez", "araştırma", "bilimsel", "laboratuvar", 
+    "fizik", "kimya", "biyoloji", "bilim insanı", "akademik", "araştırmacı", "gözlem", "evrim"
+  ],
+  "Borsa": [
+    "borsa", "hisse", "yatırım", "finans", "ekonomi", "kripto", "dolar", 
+    "borsa istanbul", "bist", "endeks", "piyasa", "alım satım", "trader", "grafik", "analiz"
+  ],
+  "Blockchain": [
+    "blockchain", "kripto", "bitcoin", "ethereum", "nft", "web3", "token", 
+    "defi", "akıllı kontrat", "madencilik", "cüzdan", "kripto para", "metamask"
+  ],
+  "Başarı": [
+    "başarı", "motivasyon", "hedef", "disiplin", "çaba", "azim", "odaklanma", 
+    "gelişim", "özgüven", "başarılı olmak", "kararlılık", "planlama"
+  ],
+  "Bilgisayar": [
+    "bilgisayar", "donanım", "işlemci", "ram", "ssd", "anakart", "ekran kartı", 
+    "programlama", "teknoloji", "bilgisayar mühendisliği", "veri", "yazılım", "sunucu"
+  ],
+  "Beslenme": [
+    "beslenme", "diyet", "sağlık", "protein", "karbonhidrat", "vitamin", "sebze", 
+    "meyve", "vegan", "bitkisel", "yemek", "kalori", "sağlıklı yaşam", "besin"
+  ],
+  "Blog": [
+    "blog", "yazı", "günlük", "deneyim", "yazar", "okur", "hikaye", "medium", 
+    "içerik", "paylaşım", "günce", "yazmak", "yazarlık"
+  ],
+  "Barış": [
+    "barış", "savaş", "insanlık", "birlik", "kardeşlik", "özgürlük", 
+    "adalet", "eşitlik", "insan hakları", "dünya barışı", "umut", "dayanışma"
+  ],
+  "Biyoloji": [
+    "biyoloji", "canlı", "hücre", "dna", "genetik", "mutasyon", "evrim", 
+    "bakteri", "mikroorganizma", "insan bedeni", "organ", "ekoloji"
+  ],
+  "Blockchain Teknolojisi": [
+    "blockchain", "akıllı kontrat", "ethereum", "web3", "token", "dağıtık sistem", 
+    "blockchain ağı", "gas fee", "metamask", "cüzdan", "merkeziyetsiz"
+  ],
+  "Beyin ve Sinir": [
+    "beyin", "sinir", "nöron", "zihin", "nöroloji", "hafıza", "bilinç", 
+    "biliş", "duygu", "beyin dalgaları", "nörobilim", "psikoloji"
+  ],
+  "Bilgisayar Oyunu": [
+    "oyun", "bilgisayar oyunu", "video game", "fps", "rpg", "oyuncu", 
+    "gaming", "steam", "epic games", "oyun geliştirme", "unity", "unreal", "indie"
+  ],
+  "Başkentler": [
+    "ankara", "istanbul", "izmir", "londra", "paris", "berlin", "roma", 
+    "madrid", "washington", "moskova", "pekin", "tokyo", "başkent"
+  ],
+  "Biyoteknoloji": [
+    "biyoteknoloji", "genetik", "dna", "biyoetik", "klonlama", "gen tedavisi", 
+    "biyo mühendislik", "biyomedikal", "ilaç geliştirme", "laboratuvar"
+  ],
+  "Bilgi Güvenliği": [
+    "siber güvenlik", "bilgi güvenliği", "şifreleme", "hack", "ddos", "veri sızıntısı", 
+    "kimlik doğrulama", "vpn", "saldırı", "firewall", "phishing"
+  ],
+  "Bireysel Gelişim": [
+    "kişisel gelişim", "motivasyon", "disiplin", "hedef", "özgüven", "düşünce gücü", 
+    "alışkanlık", "başarı", "zaman yönetimi", "mindset", "gelişim", "pozitif düşünme"
+  ],
+  "Borsa Analizi": [
+    "hisse", "borsa analizi", "grafik", "trend", "yatırım", "portföy", "teknik analiz", 
+    "fundamental", "alım satım", "trade", "borsa tahmini"
+  ],
+  "Bulut Teknolojileri": [
+    "cloud", "bulut", "aws", "azure", "google cloud", "depolama", "sunucu", 
+    "veri merkezi", "microservice", "container", "docker", "kubernetes"
+  ],
+  "Bilişim": [
+    "bilişim", "bilgisayar", "teknoloji", "internet", "veri", "siber", 
+    "donanım", "yazılım", "program", "dijital", "bilişim sektörü"
+  ],
+  "Bölgesel Gelişme": [
+    "bölge", "kalkınma", "ekonomi", "altyapı", "belediye", "planlama", 
+    "şehircilik", "yatırım", "gelişme", "bölgesel politika"
+  ],
+  "Cinsiyet Eşitliği": [
+    "cinsiyet", "eşitlik", "kadın", "erkek", "feminist", "feminizm",
+    "toplumsal cinsiyet", "ayrımcılık", "eşit hak", "adalet", "insan hakları"
+  ],
+  "Cilt Bakımı": [
+    "cilt", "bakım", "nemlendirici", "güzellik", "temizlik", "sivilce",
+    "güneş kremi", "rutin", "kozmetik", "dermatoloji", "yağlı cilt", "kuru cilt"
+  ],
+  "C# Programlama": [
+    "c#", "dotnet", ".net", "asp.net", "entity framework", "web api",
+    "mvc", "linq", "c sharp", "backend", "visual studio", "microsoft"
+  ],
+  "C++ Programlama": [
+    "c++", "cpp", "nesne yönelimli", "oop", "algoritma", "derleyici",
+    "performans", "oyun motoru", "c dil", "pointer", "memory management"
+  ],
+  "Çevre": [
+    "çevre", "doğa", "orman", "iklim", "çevre kirliliği", "geri dönüşüm",
+    "sürdürülebilirlik", "atık", "yenilenebilir enerji", "küresel ısınma"
+  ],
+  "Çocuk Gelişimi": [
+    "çocuk", "oyun", "ebeveyn", "aile", "gelişim", "eğitim", "psikoloji",
+    "çocuk eğitimi", "okul öncesi", "davranış", "duygusal gelişim"
+  ],
+  "Çalışma Hayatı": [
+    "çalışma", "iş hayatı", "kariyer", "motivasyon", "iş arama", "cv",
+    "networking", "ofis", "freelance", "home office", "verimlilik", "iş görüşmesi"
+  ],
+  "Cinsel Sağlık": [
+    "cinsel", "sağlık", "üreme", "doğum kontrol", "cinsellik", "ergenlik",
+    "ilişki", "kadın sağlığı", "erkek sağlığı", "bilinçlendirme"
+  ],
+  "Caz": [
+    "caz", "müzik", "saksafon", "caz festivali", "müzisyen", "improvizasyon",
+    "jazz", "swing", "blues", "ritim", "konser"
+  ],
+  "Ciddi Hastalıklar": [
+    "kanser", "kalp", "diyabet", "felç", "obezite", "bağışıklık", "tedavi",
+    "doktor", "ilaç", "sağlık sistemi", "erken teşhis"
+  ],
+  "Cumhuriyet": [
+    "cumhuriyet", "atatürk", "29 ekim", "laiklik", "demokrasi",
+    "ulus", "bağımsızlık", "inkılap", "devrim", "cumhuriyet bayramı"
+  ],
+  "Çağrı Merkezi": [
+    "çağrı merkezi", "müşteri hizmetleri", "call center", "temsilci",
+    "iletişim", "müşteri memnuniyeti", "satış", "performans", "ses tonu"
+  ],
+  "Çin": [
+    "çin", "pekin", "asya", "çin ekonomisi", "çin kültürü", "teknoloji", 
+    "ticaret savaşı", "yapay zeka", "çin malı", "çinli şirket"
+  ],
+  "Çay Kültürü": [
+    "çay", "kahvaltı", "demlik", "rize çayı", "sohbet", "misafirlik",
+    "gelenek", "çay demleme", "türkiye", "çay keyfi"
+  ],
+  "Çizgi Film": [
+    "çizgi film", "animasyon", "karikatür", "çocuk", "disney", "pixar",
+    "cartoon", "dizi", "film", "animasyon sanatçısı"
+  ],
+  "Çeviri": [
+    "çeviri", "translator", "dil", "ingilizce", "türkçe", "çevirmen",
+    "tercüme", "yazı çevirisi", "altyazı", "dilbilim"
+  ],
+  "Cihazlar ve Donanım": [
+    "cihaz", "donanım", "bilgisayar", "telefon", "tablet", "ekran kartı",
+    "işlemci", "anakart", "ssd", "teknoloji", "elektronik"
+  ],
+  "Çalışma Psikolojisi": [
+    "stres", "iş baskısı", "tükenmişlik", "motivasyon", "liderlik",
+    "ekip", "iş ortamı", "psikoloji", "iletişim", "verimlilik"
+  ],
+  "Cinsellik ve İlişkiler": [
+    "cinsellik", "ilişki", "partner", "bağlanma", "aşk", "romantizm",
+    "duygusal bağ", "flört", "yakınlık", "psikoloji"
+  ],
+  "Covid-19": [
+    "covid", "pandemi", "koronavirüs", "karantina", "aşı", "maske",
+    "sağlık", "bulaş", "hastalık", "bağışıklık", "toplum sağlığı"
+  ],
+  "Çevrim İçi Eğitim": [
+    "online eğitim", "uzaktan eğitim", "öğrenme", "kurs", "video ders",
+    "etkileşimli eğitim", "webinar", "e-learning", "öğrenci", "öğretmen"
+  ],
+  "Çatışma Yönetimi": [
+    "çatışma", "iletişim", "empati", "problem çözme", "ekip", "uzlaşma",
+    "liderlik", "toplantı", "kriz yönetimi", "anlaşmazlık"
+  ],
+  "Dijital Pazarlama": [
+    "dijital", "pazarlama", "sosyal medya", "reklam", "seo", "sem",
+    "google ads", "influencer", "marka", "kampanya", "dijital strateji",
+    "içerik pazarlaması", "analitik"
+  ],
+  "Dijital Dönüşüm": [
+    "dijital dönüşüm", "otomasyon", "yapay zeka", "bulut bilişim",
+    "endüstri 4.0", "iot", "akıllı sistem", "dijitalleşme", "veri analizi",
+    "teknoloji", "inovasyon"
+  ],
+  "Deprem": [
+    "deprem", "afet", "doğa olayı", "jeoloji", "fay hattı",
+    "enkaz", "yardım", "afet yönetimi", "mühendislik", "dayanıklılık"
+  ],
+  "Dil Öğrenme": [
+    "dil öğrenme", "ingilizce", "almanca", "kelime", "konuşma",
+    "dinleme", "yazma", "okuma", "gramer", "dil uygulaması", "çeviri"
+  ],
+  "Duygusal Zeka": [
+    "duygusal zeka", "empati", "kendini tanıma", "farkındalık", "iletişim",
+    "öz kontrol", "motivasyon", "duygu yönetimi", "sosyal beceri"
+  ],
+  "Diyet ve Beslenme": [
+    "diyet", "beslenme", "sağlıklı yaşam", "protein", "karbonhidrat",
+    "vitamin", "kalori", "zayıflama", "spor", "diyetisyen", "beslenme planı"
+  ],
+  "Dizi ve Film": [
+    "dizi", "film", "netflix", "sinema", "fragman", "oyuncu",
+    "yönetmen", "senaryo", "vizyon", "eleştiri", "dizi önerisi"
+  ],
+  "Dans": [
+    "dans", "bale", "modern dans", "salsa", "hiphop", "zumba",
+    "hareket", "ritim", "müzik", "performans", "sahne"
+  ],
+  "Drama": [
+    "drama", "tiyatro", "oyunculuk", "duygu", "senaryo", "hikaye",
+    "sahne", "performans", "karakter", "rol"
+  ],
+  "Doğa": [
+    "doğa", "orman", "çevre", "bitki", "hayvan", "ekosistem",
+    "kamp", "doğa yürüyüşü", "dağ", "göl", "orman yangını"
+  ],
+  "Deniz ve Balıkçılık": [
+    "deniz", "balık", "tekne", "liman", "denizcilik", "olta",
+    "balık tutmak", "mavi", "dalgalar", "deniz canlıları"
+  ],
+  "Demokrasi": [
+    "demokrasi", "özgürlük", "seçim", "oy hakkı", "insan hakları",
+    "adalet", "cumhuriyet", "eşitlik", "halk iradesi", "toplum"
+  ],
+  "Dünya Gündemi": [
+    "dünya", "haber", "siyaset", "ekonomi", "uluslararası", "savaş",
+    "barış", "diplomasi", "küresel", "jeopolitik", "gündem"
+  ],
+  "Din ve İnanç": [
+    "din", "inanç", "islam", "hıristiyanlık", "dua", "ibadet",
+    "camii", "kilise", "iman", "maneviyat", "kutsal kitap"
+  ],
+  "Dekorasyon": [
+    "dekorasyon", "ev tasarımı", "iç mimari", "mobilya", "renk",
+    "aydınlatma", "minimalizm", "ev düzeni", "dekor", "tasarım"
+  ],
+  "Doğum ve Hamilelik": [
+    "doğum", "hamilelik", "bebek", "anne", "baba", "emzirme",
+    "gebelik", "doktor", "doğum sonrası", "aile"
+  ],
+  "Duygusal İlişkiler": [
+    "ilişki", "aşk", "ayrılık", "bağlanma", "romantizm",
+    "partner", "sevgi", "iletişim", "duygular", "psikoloji"
+  ],
+  "Davranış Bilimi": [
+    "davranış", "psikoloji", "alışkanlık", "motivasyon", "insan davranışı",
+    "beyin", "duygular", "öğrenme", "karar alma"
+  ],
+  "Ders Çalışma": [
+    "ders", "öğrenci", "sınav", "motivasyon", "not", "tekrar",
+    "planlama", "zaman yönetimi", "etüt", "başarı", "odaklanma"
+  ],
+  "Doğal Afetler": [
+    "afet", "deprem", "sel", "yangın", "kasırga", "doğa olayı",
+    "iklim", "afet yönetimi", "felaket", "yardım"
+  ],
+  "Duyuru": [
+    "duyuru", "etkinlik", "toplantı", "haber", "bilgilendirme",
+    "program", "güncelleme", "açıklama"
+  ],
+  "Disko ve Eğlence": [
+    "disko", "kulüp", "eğlence", "parti", "dj", "müzik",
+    "dans", "gece hayatı", "ritim", "alkol"
+  ],
+  "Dijital Güvenlik": [
+    "siber güvenlik", "şifre", "veri koruma", "hack", "phishing",
+    "gizlilik", "vpn", "kimlik doğrulama", "güvenlik açığı", "şifreleme"
+  ],
+  "Eğitim": [
+    "eğitim", "öğrenme", "okul", "öğrenci", "öğretmen", "sınıf",
+    "ders", "akademi", "lise", "üniversite", "sınav", "kurs", "öğretim"
+  ],
+  "E-ticaret": [
+    "e-ticaret", "alışveriş", "online satış", "shopify", "amazon",
+    "trendyol", "hepsiburada", "pazaryeri", "ürün", "kargo", "ödeme", "müşteri"
+  ],
+  "Ekonomi": [
+    "ekonomi", "para", "enflasyon", "bütçe", "yatırım", "borsa",
+    "kriz", "finans", "faiz", "işsizlik", "döviz", "ekonomik büyüme"
+  ],
+  "Enerji": [
+    "enerji", "elektrik", "doğalgaz", "güneş enerjisi", "rüzgar enerjisi",
+    "yenilenebilir enerji", "nükleer", "tasarruf", "enerji krizi"
+  ],
+  "Edebiyat": [
+    "edebiyat", "şiir", "roman", "öykü", "yazar", "kitap",
+    "edebi", "okuma", "eleştiri", "hikaye", "deneme"
+  ],
+  "E-spor": [
+    "e-spor", "oyun", "turnuva", "takım", "oyuncu", "league of legends",
+    "valorant", "csgo", "pubg", "gaming", "twitch", "canlı yayın"
+  ],
+  "Evcil Hayvanlar": [
+    "evcil hayvan", "kedi", "köpek", "kuş", "balık", "bakım",
+    "veteriner", "mama", "hayvan sağlığı", "barınak"
+  ],
+  "Etik ve Ahlak": [
+    "etik", "ahlak", "doğruluk", "dürüstlük", "adalet", "erdem",
+    "sorumluluk", "insanlık", "vicdan", "toplum"
+  ],
+  "Eğlence": [
+    "eğlence", "mizah", "komedi", "şaka", "gülme", "video", "caps",
+    "stand-up", "şov", "gece hayatı", "tv programı"
+  ],
+  "Ekoloji": [
+    "ekoloji", "doğa", "çevre", "ekosistem", "biyoçeşitlilik",
+    "sürdürülebilirlik", "orman", "iklim değişikliği", "geri dönüşüm"
+  ],
+  "Evlilik": [
+    "evlilik", "aşk", "ilişki", "düğün", "nikah", "aile",
+    "bağlılık", "evlilik öncesi", "çift", "sadakat"
+  ],
+  "Empati": [
+    "empati", "duygusal zeka", "iletişim", "insan ilişkileri",
+    "farkındalık", "anlayış", "psikoloji", "davranış"
+  ],
+  "Ergenlik": [
+    "ergenlik", "gençlik", "psikoloji", "kimlik", "gelişim",
+    "aile", "okul", "sosyal çevre", "duygular"
+  ],
+  "Erişilebilirlik": [
+    "erişilebilirlik", "engellilik", "teknoloji", "kapsayıcılık",
+    "web erişimi", "alt yazı", "görme engelli", "tasarım", "evrensellik"
+  ],
+  "Ev Ekonomisi": [
+    "tasarruf", "bütçe", "fatura", "alışveriş", "yemek planı",
+    "gelir", "harcama", "para yönetimi", "ev gideri"
+  ],
+  "Ebeveynlik": [
+    "ebeveyn", "çocuk", "anne", "baba", "aile", "çocuk gelişimi",
+    "disiplin", "iletişim", "aile içi ilişki"
+  ],
+  "Evrim": [
+    "evrim", "biyoloji", "doğa", "genetik", "bilim", "insan türü",
+    "darwin", "evrim teorisi", "canlı", "uyum"
+  ],
+  "Ekstrem Sporlar": [
+    "ekstrem", "spor", "dağcılık", "yamaç paraşütü", "dalgıçlık",
+    "adrenalin", "macera", "risk", "outdoor"
+  ],
+  "E-posta Pazarlaması": [
+    "e-posta", "mail", "kampanya", "bülten", "iletişim", "müşteri",
+    "açılma oranı", "gönderim", "otomasyon"
+  ],
+  "Etkinlikler": [
+    "etkinlik", "konferans", "fuar", "festival", "toplantı", "konser",
+    "webinar", "atölye", "buluşma", "sempozyum"
+  ],
+  "Engellilik": [
+    "engelli", "erişilebilirlik", "destek", "hak", "toplumsal katılım",
+    "fiziksel engel", "kapsayıcılık", "yardım", "bilinçlendirme"
+  ],
+  "Eğitim Teknolojileri": [
+    "edtech", "eğitim teknolojisi", "öğrenme platformu", "yapay zeka",
+    "uzaktan eğitim", "lms", "öğrenci başarısı", "teknoloji"
+  ],
+  "E-turizm": [
+    "e-turizm", "online rezervasyon", "seyahat", "otel", "uçak bileti",
+    "turizm teknolojisi", "tatil planlama", "gezgin"
+  ],
+  "Finans": [
+    "finans", "bütçe", "yatırım", "banka", "kredi", "faiz",
+    "borsa", "kripto", "ekonomi", "gelir", "gider", "para yönetimi",
+    "tasarruf", "finansal özgürlük"
+  ],
+  "Felsefe": [
+    "felsefe", "düşünce", "bilgelik", "varlık", "etik", "mantık",
+    "ahlak", "varoluş", "düşünür", "sofist", "diyalektik", "sokrates", "kierkegaard"
+  ],
+  "Fotoğrafçılık": [
+    "fotoğraf", "kamera", "çekim", "ışık", "kompozisyon", "lens",
+    "fotoğraf düzenleme", "photoshop", "görsel sanat", "portre", "manzara", "estetik"
+  ],
+  "Film ve Sinema": [
+    "film", "sinema", "dizi", "oyuncu", "senaryo", "film analizi",
+    "yönetmen", "kamera arkası", "gösterim", "fragman", "eleştiri", "oscars"
+  ],
+  "Futbol": [
+    "futbol", "maç", "lig", "transfer", "gol", "takım", "oyuncu",
+    "teknik direktör", "taraftar", "futbol analizi", "spor", "şampiyonlar ligi"
+  ],
+  "Fitness": [
+    "fitness", "spor salonu", "egzersiz", "ağırlık", "kas", "yağ yakımı",
+    "kardiyo", "beslenme", "protein", "sağlık", "vücut geliştirme", "spor rutini"
+  ],
+  "Fizik": [
+    "fizik", "bilim", "kuantum", "enerji", "madde", "hareket",
+    "gravitasyon", "ışık", "atom", "teori", "deney", "newton", "einstein"
+  ],
+  "Fuar ve Etkinlikler": [
+    "fuar", "etkinlik", "konferans", "seminer", "buluşma", "festival",
+    "tanıtım", "sponsorluk", "organizasyon", "katılım", "networking"
+  ],
+  "Freelance Çalışma": [
+    "freelance", "uzaktan çalışma", "home office", "serbest meslek",
+    "proje", "müşteri", "upwork", "fiverr", "gelir", "verimlilik", "zaman yönetimi"
+  ],
+  "Front-end": [
+    "frontend", "react", "vue", "angular", "css", "html", "javascript",
+    "ui", "ux", "tasarım", "responsive", "web geliştirme", "component"
+  ],
+  "Full-stack Geliştirme": [
+    "fullstack", "backend", "frontend", "api", "nodejs", "react",
+    "veritabanı", "express", "mssql", "mongodb", "rest api", "jwt", "auth"
+  ],
+  "Film Müzikleri": [
+    "film müziği", "soundtrack", "besteci", "müzik analizi",
+    "duygusal müzik", "sinema müziği", "orkestra", "tema"
+  ],
+  "Farkındalık": [
+    "farkındalık", "bilinç", "kişisel gelişim", "öz farkındalık",
+    "meditasyon", "psikoloji", "duygusal denge", "düşünce", "zihin", "kendini tanıma"
+  ],
+  "Feminizm": [
+    "feminizm", "kadın hakları", "toplumsal cinsiyet", "eşitlik",
+    "kadın özgürlüğü", "aktivizm", "toplum", "adalet", "kadın hareketi"
+  ],
+  "Fotoğraf Düzenleme": [
+    "düzenleme", "photoshop", "lightroom", "renk", "kontrast",
+    "retouch", "görsel", "dijital sanat", "estetik", "filtre"
+  ],
+  "Fonksiyonel Programlama": [
+    "fonksiyonel programlama", "pure function", "higher order function",
+    "immutability", "javascript", "map", "reduce", "filter", "lambda", "typescript"
+  ],
+  "Farklı Kültürler": [
+    "kültür", "yabancı", "seyahat", "ülke", "gelenek", "dil",
+    "insan", "yaşam tarzı", "alışkanlık", "kültürel farklılık", "toplum"
+  ],
+  "Fobi ve Korkular": [
+    "fobi", "korku", "anksiyete", "psikoloji", "panik", "travma",
+    "duygular", "beyin", "terapi", "insan davranışı"
+  ],
+  "Fütürizm": [
+    "fütürizm", "gelecek", "teknoloji", "yapay zeka", "robotik",
+    "bilim kurgu", "inovasyon", "trend", "gelecek vizyonu"
+  ],
+  "Fikir ve Girişimcilik": [
+    "fikir", "girişim", "startup", "proje", "inovasyon",
+    "yatırımcı", "ekip", "iş planı", "ürün geliştirme", "mvp"
+  ],
+  "Fintech": [
+    "fintech", "bankacılık", "kripto", "ödeme sistemleri",
+    "blockchain", "ekonomi", "dijital para", "mobil bankacılık"
+  ],
+  "Gastronomi": [
+    "gastronomi", "yemek", "mutfak", "şef", "tarif", "pişirme", "lezzet",
+    "gurme", "tat", "restoran", "tatlı", "yemek kültürü", "yemek tarifi"
+  ],
+  "Girişimcilik": [
+    "girişim", "startup", "yatırım", "fikir", "inovasyon", "melek yatırımcı",
+    "şirket", "ürün", "mvp", "büyüme", "networking", "pitch", "kuluçka merkezi"
+  ],
+  "Gelecek ve Teknoloji": [
+    "gelecek", "yapay zeka", "robot", "teknoloji", "otomasyon", "inovasyon",
+    "endüstri 4.0", "fütürizm", "yapay zekâ", "gelişim", "bilim kurgu", "yeni dünya"
+  ],
+  "Güvenlik": [
+    "güvenlik", "siber güvenlik", "şifre", "veri koruma", "hack", "gizlilik",
+    "saldırı", "ağ güvenliği", "vpn", "kriptografi", "şifreleme", "veri ihlali"
+  ],
+  "Genetik": [
+    "genetik", "dna", "rna", "biyoteknoloji", "gen", "kalıtım", "biyoloji",
+    "hücre", "bilim", "laboratuvar", "genom", "insan evrimi"
+  ],
+  "Güncel Olaylar": [
+    "haber", "güncel", "gündem", "son dakika", "tartışma", "politika", "toplum",
+    "seçim", "kriz", "gelişme", "olay", "basın", "gazetecilik"
+  ],
+  "Görsel Sanatlar": [
+    "görsel sanat", "resim", "fotoğraf", "heykel", "grafik", "sergi", "çizim",
+    "sanat galerisi", "portre", "soyut", "estetik", "dijital sanat"
+  ],
+  "Grafik Tasarım": [
+    "tasarım", "grafik", "logo", "renk", "tipografi", "illustrator",
+    "photoshop", "branding", "kurumsal kimlik", "poster", "infografik"
+  ],
+  "Giyim ve Moda": [
+    "moda", "stil", "giyim", "aksesuar", "trend", "defile", "tasarımcı",
+    "kombin", "marka", "sürdürülebilir moda", "tekstili", "tarz"
+  ],
+  "Gönüllülük": [
+    "gönüllü", "yardım", "toplum", "sosyal sorumluluk", "bağış", "dernek",
+    "vakıf", "insanlık", "dayanışma", "sosyal etki", "çevre", "yardımlaşma"
+  ],
+  "Gıda ve Beslenme": [
+    "gıda", "beslenme", "sağlık", "diyet", "vitamin", "protein", "bitkisel",
+    "vegan", "sağlıklı yaşam", "organik", "detoks", "besin değeri"
+  ],
+  "Gelişim Psikolojisi": [
+    "psikoloji", "kişisel gelişim", "duygular", "öz farkındalık", "çocuk gelişimi",
+    "davranış", "zihin", "motivasyon", "alışkanlık", "terapi"
+  ],
+  "Günlük Hayat": [
+    "yaşam", "günlük", "alışkanlık", "rutin", "deneyim", "anılar",
+    "insan ilişkileri", "yaşam tarzı", "kişisel", "gözlem"
+  ],
+  "Güzel Sanatlar": [
+    "güzel sanat", "resim", "müzik", "tiyatro", "dans", "sinema", "edebiyat",
+    "heykel", "performans", "yaratıcılık", "sanat eleştirisi"
+  ],
+  "Grafik Programlama": [
+    "grafik", "canvas", "svg", "pixi", "threejs", "render", "2d", "3d", "shader",
+    "animasyon", "görselleştirme"
+  ],
+  "Geliştirici Araçları": [
+    "developer", "vs code", "git", "github", "postman", "terminal",
+    "docker", "npm", "package", "ci cd", "debug", "yazılım araçları"
+  ],
+  "Güç ve Enerji": [
+    "enerji", "güç", "elektrik", "yenilenebilir", "güneş", "rüzgar", "hidroelektrik",
+    "nükleer", "doğalgaz", "enerji verimliliği", "yeşil enerji"
+  ],
+  "Giriş Sayfaları (Landing Page)": [
+    "landing page", "tasarım", "ui", "ux", "responsive", "html", "css",
+    "kullanıcı deneyimi", "site", "front-end", "optimizasyon"
+  ],
+  "Görsel İletişim": [
+    "görsel iletişim", "grafik", "medya", "reklam", "görsellik",
+    "sunum", "tasarım", "markalaşma", "iletişim", "mesaj", "algı"
+  ],
+  "Gelişmiş Teknolojiler": [
+    "teknoloji", "makine öğrenimi", "yapay zeka", "robotik", "iot",
+    "blok zinciri", "veri bilimi", "otomasyon", "bulut bilişim", "inovasyon"
+  ],
+  "Hukuk": [
+    "hukuk", "adalet", "mahkeme", "yasa", "kanun", "anayasa", "savcı",
+    "hakim", "avukat", "hak", "suç", "ceza", "dava", "insan hakları",
+    "mevzuat", "adalet sistemi", "hukuki süreç"
+  ],
+  "Hayvanlar": [
+    "hayvan", "kedi", "köpek", "kuş", "balık", "doğa", "vahşi yaşam",
+    "evcil", "barınak", "hayvan sevgisi", "koruma", "hayvan hakları",
+    "yaban hayatı", "can dostlar", "hayvan bakımı"
+  ],
+  "Hayat ve Yaşam": [
+    "hayat", "yaşam", "deneyim", "mutluluk", "motivasyon", "alışkanlık",
+    "zaman yönetimi", "kişisel gelişim", "denge", "öz farkındalık",
+    "yaşam tarzı", "insan ilişkileri", "günlük yaşam", "özgürlük"
+  ],
+  "Hikaye": [
+    "hikaye", "öykü", "anlatı", "kurgu", "karakter", "olay örgüsü",
+    "yazar", "edebiyat", "roman", "yaratıcı yazarlık", "betimleme",
+    "anlatım", "diyalog", "drama", "kısa hikaye"
+  ],
+  "Hobiler": [
+    "hobi", "resim", "fotoğraf", "yazı", "koleksiyon", "bahçecilik",
+    "kamp", "müzik", "el işi", "modellik", "balık tutma", "bisiklet",
+    "seyahat", "astronomi", "gönüllülük", "satranç"
+  ],
+  "HTML ve Web Geliştirme": [
+    "html", "css", "javascript", "frontend", "react", "angular", "vue",
+    "responsive", "web sitesi", "seo", "ui", "ux", "tasarım", "semantik",
+    "web geliştirme", "form", "etiket", "meta"
+  ],
+  "Hosting ve Sunucular": [
+    "hosting", "sunucu", "domain", "dns", "ssl", "cloud", "vps",
+    "deployment", "ftp", "nginx", "apache", "docker", "load balancer",
+    "sunucu yönetimi", "barındırma", "site yayına alma"
+  ],
+  "Halk Sağlığı": [
+    "sağlık", "hastalık", "aşı", "toplum sağlığı", "epidemi", "virüs",
+    "bulaşıcı hastalık", "korunma", "sağlık sistemi", "pandemi", "doktor",
+    "hijyen", "beslenme", "psikolojik sağlık", "stres yönetimi"
+  ],
+  "Hata Yönetimi": [
+    "hata", "debug", "exception", "try catch", "loglama", "nlog",
+    "hata ayıklama", "test", "hata mesajı", "kod kontrolü", "uygulama güvenliği",
+    "problem çözme", "hata yakalama", "fail safe"
+  ],
+  "Hayal Gücü ve Yaratıcılık": [
+    "yaratıcılık", "hayal gücü", "yenilik", "inovasyon", "ilham",
+    "sanat", "tasarım", "keşif", "problem çözme", "zihin haritası",
+    "üretkenlik", "düşünce", "vizyon", "yaratıcı düşünme"
+  ],
+  "Hedef Belirleme": [
+    "hedef", "motivasyon", "planlama", "vizyon", "başarı", "disiplin",
+    "zaman yönetimi", "alışkanlık", "kısa vadeli hedef", "uzun vadeli hedef",
+    "kararlılık", "strateji", "öz disiplin"
+  ],
+  "Hayırseverlik": [
+    "yardım", "bağış", "sosyal sorumluluk", "gönüllü", "vakıf", "dernek",
+    "toplum", "iyilik", "insanlık", "yardımlaşma", "bağış kampanyası",
+    "sosyal etki", "yardım kuruluşu"
+  ],
+  "Hukuk Teknolojileri": [
+    "legaltech", "hukuk teknolojisi", "yapay zeka", "otomasyon", "sözleşme yönetimi",
+    "dava analizi", "hukuki yazılım", "veri analizi", "hukukta dijitalleşme",
+    "blok zinciri", "sözleşme oluşturucu"
+  ],
+  "Hastalıklar ve Tedavi": [
+    "hastalık", "tedavi", "ilaç", "doktor", "sağlık", "klinik", "tanı",
+    "ameliyat", "semptom", "korunma", "psikolojik", "terapi", "rehabilitasyon"
+  ],
+  "Hız ve Performans": [
+    "performans", "optimizasyon", "verimlilik", "hız", "react", "nextjs",
+    "cache", "lazy load", "bundle", "render", "ölçeklenebilirlik",
+    "benchmark", "cdn"
+  ],
+  "Hisse Senedi ve Finans": [
+    "borsa", "hisse", "yatırım", "portföy", "finans", "ekonomi", "endeks",
+    "kripto", "para", "faiz", "risk", "trend", "piyasa analizi", "grafik"
+  ],
+  "HTML5 API'leri": [
+    "html5", "canvas", "localstorage", "sessionstorage", "websocket",
+    "service worker", "manifest", "geolocation", "audio", "video", "api"
+  ],
+  "Hayatta Kalma": [
+    "hayatta kalma", "doğa", "kamp", "barınak", "yiyecek", "su", "strateji",
+    "hazırlık", "afet", "deprem", "doğal afet", "orman", "tecrübe"
+  ],
+   "İş Dünyası": [
+    "iş", "şirket", "kurumsal", "kariyer", "ofis", "girişim", "pazarlama",
+    "strateji", "yönetim", "insan kaynakları", "çalışan", "liderlik",
+    "networking", "girişimcilik", "iş modeli", "performans", "verimlilik"
+  ],
+  "İnovasyon": [
+    "inovasyon", "yenilik", "fikir", "gelişim", "teknoloji", "tasarım",
+    "yaratıcılık", "ürün geliştirme", "start-up", "fark yaratmak", "araştırma",
+    "deneysel", "prototip", "geliştirici", "vizyon"
+  ],
+  "İletişim": [
+    "iletişim", "konuşma", "dinleme", "beden dili", "etkileşim", "topluluk",
+    "dijital iletişim", "sosyal medya", "ağ kurma", "iletişim becerisi",
+    "empati", "yazılı iletişim", "toplum", "anlayış"
+  ],
+  "İnsan Kaynakları": [
+    "ik", "insan kaynakları", "işe alım", "cv", "mülakat", "aday seçimi",
+    "performans değerlendirme", "kariyer", "çalışan deneyimi", "motivasyon",
+    "liderlik", "ekip yönetimi", "personel", "yetenek yönetimi"
+  ],
+  "İklim Değişikliği": [
+    "iklim", "küresel ısınma", "çevre", "doğa", "sera gazı", "karbon ayak izi",
+    "enerji", "orman", "doğal afet", "su kaynakları", "sürdürülebilirlik",
+    "geri dönüşüm", "iklim krizi", "yeşil enerji", "çevre koruma"
+  ],
+  "İnternet": [
+    "internet", "web", "tarayıcı", "url", "domain", "dns", "web sitesi",
+    "bağlantı", "http", "https", "sunucu", "ağ", "cloud", "veri", "protokol"
+  ],
+  "İstatistik ve Veri": [
+    "istatistik", "veri analizi", "grafik", "r", "python", "excel", "tablo",
+    "veri bilimi", "analitik", "veri toplama", "ortalama", "dağılım",
+    "regresyon", "yapay zeka", "modelleme"
+  ],
+  "İçerik Üretimi": [
+    "içerik", "blog", "yazarlık", "medium", "seo", "editörlük", "metin yazarlığı",
+    "storytelling", "kitle", "okur", "başlık", "etiket", "yazı üretimi",
+    "görsel içerik", "influencer"
+  ],
+  "İnşaat ve Mimarlık": [
+    "inşaat", "mimarlık", "bina", "tasarım", "mühendislik", "yapı", "proje",
+    "malzeme", "şehir planlama", "altyapı", "konut", "estetik", "mekan",
+    "modern mimari", "statik"
+  ],
+  "İş Analitiği": [
+    "analitik", "veri", "iş zekası", "bi", "dashboard", "power bi", "veri görselleştirme",
+    "rakam", "analiz", "karar destek", "modelleme", "iş süreçleri", "ölçümleme"
+  ],
+  "İç Mekan Tasarımı": [
+    "iç mekan", "dekorasyon", "tasarım", "mobilya", "aydınlatma", "renk",
+    "stil", "minimalizm", "modern", "yaşam alanı", "estetik", "konsept",
+    "mimari", "mekan tasarımı"
+  ],
+  "İş Etiği": [
+    "etik", "ahlak", "sorumluluk", "adalet", "dürüstlük", "iş ahlakı",
+    "kurumsal etik", "şeffaflık", "güven", "değer", "iş ilişkileri",
+    "adaletli yönetim", "etik kurallar"
+  ],
+  "İç Güvenlik": [
+    "güvenlik", "polis", "asker", "devlet", "emniyet", "kriz", "saldırı",
+    "terör", "sınır güvenliği", "kolluk kuvveti", "ulusal güvenlik"
+  ],
+  "İleri Teknolojiler": [
+    "yapay zeka", "makine öğrenimi", "veri bilimi", "iot", "robotik",
+    "blok zinciri", "artırılmış gerçeklik", "sanallaştırma", "5g", "otonom sistemler"
+  ],
+  "İş Zekası": [
+    "iş zekası", "dashboard", "powerbi", "veri görselleştirme", "trend analizi",
+    "karar destek", "veri tabanı", "ölçüm", "performans", "analitik"
+  ],
+  "İnanç ve Felsefe": [
+    "inanç", "felsefe", "din", "ahlak", "maneviyat", "varoluş", "anlam",
+    "yaşam felsefesi", "vicdan", "öz farkındalık", "ruhsal denge", "erdem"
+  ],
+  "İnovatif Eğitim": [
+    "eğitim", "öğretim", "teknoloji", "dijital öğrenme", "uzaktan eğitim",
+    "öğrenme araçları", "yeni nesil eğitim", "ders", "öğrenci", "inovasyon",
+    "eğitim teknolojileri", "öğretmen"
+  ],
+  "İş Planlama": [
+    "planlama", "yol haritası", "strateji", "hedef", "iş modeli", "pazar araştırması",
+    "bütçe", "risk analizi", "takvim", "proje yönetimi", "roadmap"
+  ],
+  "İnsan Psikolojisi": [
+    "psikoloji", "davranış", "empati", "duygu", "karakter", "kişilik",
+    "stres", "zihin", "motivasyon", "terapi", "insan doğası", "öz farkındalık"
+  ],
+  "İş Sağlığı ve Güvenliği": [
+    "iş güvenliği", "iş sağlığı", "kaza", "koruyucu", "eğitim", "risk analizi",
+    "iş kazası", "baret", "emniyet", "denetim", "çalışma ortamı", "güvenlik protokolü"
+  ],
+  "JavaScript": [
+    "javascript", "js", "frontend", "react", "vue", "angular", "node", "dom",
+    "event listener", "promise", "async", "await", "es6", "typescript",
+    "npm", "yarn", "babel", "webpack", "json", "api", "fetch"
+  ],
+  "Java": [
+    "java", "oop", "spring", "hibernate", "jdk", "jvm", "maven", "gradle",
+    "backend", "android", "javabean", "servlet", "tomcat", "enterprise",
+    "jpa", "microservice", "class", "interface"
+  ],
+  "JSON": [
+    "json", "api", "rest", "fetch", "data", "payload", "serialize", "object",
+    "key value", "response", "postman", "endpoint", "parsing", "stringify"
+  ],
+  "Jest": [
+    "jest", "test", "unit test", "mock", "coverage", "snapshot", "ci",
+    "pipeline", "assert", "expect", "describe", "it", "automation"
+  ],
+  "JQuery": [
+    "jquery", "$", "dom", "selector", "event", "ajax", "callback",
+    "plugin", "effect", "fade", "toggle", "animation", "legacy"
+  ],
+  "Journal (Günlük ve Yazarlık)": [
+    "günlük", "yazı", "not", "anı", "düşünce", "içsel konuşma", "duygu",
+    "deneyim", "kişisel yazı", "hikaye", "yazar", "ifade", "iç dökme"
+  ],
+  "Jeoloji": [
+    "jeoloji", "taş", "kaya", "mineraller", "yer kabuğu", "depremler",
+    "jeofizik", "doğa", "yeryüzü", "volkan", "fay hattı", "toprak", "bilim"
+  ],
+  "Jenerasyon": [
+    "jenerasyon", "nesil", "gen z", "gen y", "millennial", "boomer",
+    "dijital nesil", "teknoloji kuşağı", "alışkanlık", "kültürel değişim",
+    "modern yaşam", "trend", "gençlik", "toplum"
+  ],
+  "Jazz ve Müzik Kültürü": [
+    "jazz", "müzik", "ritim", "doğaçlama", "enstrüman", "melodi", "davul",
+    "saksafon", "piyano", "konser", "caz", "müzisyen", "performans", "stüdyo"
+  ],
+  "Jüpiter ve Uzay": [
+    "jüpiter", "gezegen", "uzay", "astronomi", "nasa", "güneş sistemi",
+    "yörünge", "evren", "yıldız", "teleskop", "bilim", "uzay aracı",
+    "keşif", "galaksi", "uzay bilimi"
+  ],
+  "Joker ve Sinema": [
+    "joker", "film", "sinema", "karakter", "dc", "batman", "hikaye",
+    "oyunculuk", "drama", "psikoloji", "sanat", "karanlık tema"
+  ],
+  "Judo ve Spor": [
+    "judo", "spor", "dövüş", "tekni̇k", "savunma", "antrenman", "karate",
+    "taekwondo", "jiu jitsu", "fiziksel", "dayanıklılık", "sporcu"
+  ],
+  "Jurnalizm (Gazetecilik)": [
+    "jurnalizm", "gazetecilik", "haber", "medya", "basın", "etik", "araştırma",
+    "röportaj", "yazı", "makale", "dijital medya", "haberleşme", "editör"
+  ],
+  "Jest ve Mim": [
+    "jest", "mimik", "beden dili", "ifade", "duygu", "iletişim", "empati",
+    "insan ilişkileri", "sözsüz iletişim", "jest mimik"
+  ],
+  "Kodlama": [
+    "kod", "kodlama", "programlama", "yazılım", "script", "algoritma",
+    "debug", "hata ayıklama", "frontend", "backend", "fullstack", "c#", "python",
+    "java", "react", "typescript", "developer", "uygulama", "web", "mobil"
+  ],
+  "Kariyer": [
+    "kariyer", "iş", "çalışma", "ofis", "iş başvurusu", "özgeçmiş", "cv",
+    "linkedin", "profesyonel", "iş görüşmesi", "network", "yetenek", "gelişim",
+    "mentorluk", "terfi", "staj", "çalışan", "patron"
+  ],
+  "Kültür": [
+    "kültür", "sanat", "miras", "toplum", "gelenek", "örf", "adet",
+    "kültürel", "tarih", "anane", "müze", "sergi", "tiyatro", "dil", "kültür mirası"
+  ],
+  "Kitap": [
+    "kitap", "roman", "hikaye", "şiir", "yazar", "okuma", "edebiyat",
+    "kütüphane", "yayın evi", "okur", "eleştiri", "sayfa", "cümle", "paragraf"
+  ],
+  "Kadın": [
+    "kadın", "feminizm", "eşitlik", "kadın hakları", "toplumsal cinsiyet",
+    "annelik", "kadın gücü", "kadın girişimci", "kadın sağlığı", "kadın lider",
+    "kadın cinayeti", "feminist", "kadın dayanışması"
+  ],
+  "Kedi": [
+    "kedi", "hayvan", "evcil", "patili", "miyav", "hayvan sevgisi", "sokak hayvanı",
+    "barınak", "sahiplendirme", "kuyruk", "tüy", "kedi maması", "hayvan dostu"
+  ],
+  "Kahve": [
+    "kahve", "espresso", "latte", "americano", "barista", "kafe", "kahvaltı",
+    "demleme", "kahve makinesi", "çekirdek", "filtre", "sohbet", "gün başı"
+  ],
+  "Kripto": [
+    "kripto", "coin", "bitcoin", "ethereum", "blockchain", "token", "borsa",
+    "yatırım", "wallet", "metamask", "decentralize", "nft", "defi", "fintech"
+  ],
+  "Kuantum": [
+    "kuantum", "fizik", "atom", "enerji", "dalga", "madde", "bilim", "parçacık",
+    "mekanik", "olay", "gözlemci", "bilim insanı", "deney", "laboratuvar"
+  ],
+  "Kişisel Gelişim": [
+    "kişisel gelişim", "motivasyon", "öz farkındalık", "psikoloji", "alışkanlık",
+    "hedef", "disiplin", "özgüven", "başarı", "özsaygı", "kendini keşfetme",
+    "korku", "zaman yönetimi", "stres"
+  ],
+  "Korku": [
+    "korku", "gerilim", "kabus", "karanlık", "panik", "adrenalin", "dehşet",
+    "film", "hikaye", "gerçek olay", "psikolojik", "katil", "gizem"
+  ],
+  "Kardeşlik": [
+    "kardeş", "aile", "sevgi", "bağ", "dayanışma", "birlik", "sadakat",
+    "dostluk", "paylaşım", "çocukluk", "hatıra"
+  ],
+  "Kadraj (Fotoğraf ve Sinema)": [
+    "kadraj", "fotoğraf", "kamera", "çekim", "lens", "ışık", "görsel",
+    "sinematografi", "film", "kadın yönetmen", "renk", "kontrast", "kompozisyon"
+  ],
+  "Kültür Sanat": [
+    "sergi", "resim", "heykel", "galeri", "kültür merkezi", "yaratıcılık",
+    "sanatçı", "performans", "sahne", "müzik", "tiyatro", "festival"
+  ],
+  "Küresel Isınma": [
+    "küresel ısınma", "iklim", "çevre", "doğa", "karbon", "sera gazı", "ekoloji",
+    "enerji tasarrufu", "yenilenebilir enerji", "geri dönüşüm", "buzullar", "orman"
+  ],
+  "Kamp ve Doğa": [
+    "kamp", "çadır", "doğa", "doğa yürüyüşü", "dağ", "gece", "maceraperest",
+    "keşif", "kamp ateşi", "macera", "backpack", "orman", "manzara"
+  ],
+  "Komedi": [
+    "komedi", "mizah", "şaka", "gülmek", "espri", "eğlence", "stand up",
+    "karikatür", "absürd", "kahkaha", "parodi"
+  ],
+  "Kariyer ve Teknoloji": [
+    "kariyer", "teknoloji", "yapay zeka", "gelecek", "otomasyon", "iş dünyası",
+    "veri bilimi", "yazılım sektörü", "startup", "teknopark", "girişimcilik"
+  ],
+  "Liderlik": [
+    "lider", "liderlik", "yönetici", "ekip", "yönetim", "vizyon", "misyon",
+    "karar alma", "strateji", "motivasyon", "lider ruhu", "ilham", "sorumluluk",
+    "ekip çalışması", "karizma", "rehberlik"
+  ],
+  "Lezzet": [
+    "lezzet", "yemek", "tat", "aşçı", "mutfak", "tarif", "yemek tarifi", "restoran",
+    "gurmeyim", "tatlı", "tuzlu", "kahvaltı", "akşam yemeği", "yemek kültürü",
+    "şef", "fırın", "pişirme", "baharat"
+  ],
+  "Lüks": [
+    "lüks", "pahalı", "marka", "tasarım", "kalite", "moda", "araba", "villa",
+    "yaşam tarzı", "seyahat", "prestij", "takı", "aksesuar", "lüks otel",
+    "özel koleksiyon"
+  ],
+  "Lojistik": [
+    "lojistik", "taşımacılık", "kargo", "tedarik zinciri", "depolama", "nakliye",
+    "taşıma", "lojistik firması", "tedarik", "dağıtım", "sevkiyat", "taşıyıcı",
+    "kamyon", "üretim", "stok yönetimi"
+  ],
+  "Linux": [
+    "linux", "ubuntu", "debian", "fedora", "terminal", "bash", "kernel",
+    "açık kaynak", "sistem yöneticisi", "sunucu", "cli", "komut satırı",
+    "penguin", "root", "distro", "gnu"
+  ],
+  "Lifestyle": [
+    "yaşam tarzı", "lifestyle", "alışkanlık", "sağlık", "moda", "minimalizm",
+    "günlük rutin", "hobi", "seyahat", "alışveriş", "beslenme", "spor", "kişisel bakım"
+  ],
+  "Lisans": [
+    "lisans", "üniversite", "mezuniyet", "öğrenci", "bölüm", "akademi", "yüksek lisans",
+    "tez", "ödev", "akademisyen", "eğitim", "sertifika", "sınav", "not ortalaması"
+  ],
+  "Lise": [
+    "lise", "okul", "öğrenci", "sınıf", "arkadaş", "gençlik", "öğretmen",
+    "sınav", "ders", "müfredat", "üniversiteye hazırlık", "mezuniyet", "genç"
+  ],
+  "Liberalizm": [
+    "liberal", "liberalizm", "özgürlük", "ekonomi", "piyasa", "devlet",
+    "serbest piyasa", "hak", "birey", "demokrasi", "özgür düşünce", "kapitalizm"
+  ],
+  "Lansman": [
+    "lansman", "tanıtım", "ürün çıkışı", "basın toplantısı", "startup",
+    "girişim", "etkinlik", "tanıtım kampanyası", "marka", "pazarlama", "inovasyon"
+  ],
+  "Liderlik ve Motivasyon": [
+    "liderlik", "motivasyon", "ekip çalışması", "başarı", "vizyoner",
+    "yönetim", "lider olmak", "özgüven", "sorumluluk", "ilham verici", "mentor"
+  ],
+  "Lezbiyen ve LGBT+": [
+    "lezbiyen", "lgbt", "queer", "toplumsal cinsiyet", "eşitlik", "onur yürüyüşü",
+    "farklılık", "özgürlük", "açılmak", "kimlik", "trans", "nonbinary", "hak mücadelesi"
+  ],
+  "Loto ve Şans Oyunları": [
+    "loto", "şans", "piyango", "iddaa", "bahis", "talih", "şanslı numara",
+    "kumar", "casino", "çekiliş", "şans oyunları", "şanslı gün"
+  ],
+  "Logolar ve Tasarım": [
+    "logo", "tasarım", "grafik", "marka kimliği", "renk", "tipografi",
+    "estetik", "illustrator", "figma", "canva", "grafiker", "vizyon", "yaratıcılık"
+  ],
+  "Lojik ve Felsefe": [
+    "lojik", "mantık", "düşünce", "akıl", "rasyonel", "felsefe", "argüman",
+    "kanıt", "analiz", "bilimsel düşünme", "diyalektik", "akıl yürütme"
+  ],
+  "Motivasyon": [
+    "motivasyon", "ilham", "hedef", "başarı", "özgüven", "disiplin",
+    "kendini geliştirme", "alışkanlık", "kararlılık", "gelişim", "azim",
+    "başarmak", "pozitif düşünce", "zaman yönetimi", "öz farkındalık"
+  ],
+  "Müzik": [
+    "müzik", "şarkı", "albüm", "sanatçı", "konser", "nota", "beste", "enstrüman",
+    "melodi", "ritim", "bateri", "gitar", "piyano", "sahne", "şarkıcı", "spotify"
+  ],
+  "Moda": [
+    "moda", "stil", "trend", "giyim", "kıyafet", "tasarımcı", "aksesuar",
+    "defile", "marka", "kombin", "estetik", "gardırop", "ayakkabı", "çanta",
+    "moda haftası", "tarz"
+  ],
+  "Makine Öğrenmesi": [
+    "makine öğrenmesi", "yapay zeka", "ai", "model", "veri", "algoritma",
+    "python", "tensorflow", "pytorch", "deep learning", "nöral ağ", "prediction",
+    "machine learning", "dataset", "accuracy"
+  ],
+  "Matematik": [
+    "matematik", "geometri", "aritmetik", "formül", "denklem", "integral",
+    "türev", "istatistik", "olasılık", "fonksiyon", "mantık", "sayısal",
+    "analiz", "problem çözme"
+  ],
+  "Medya": [
+    "medya", "haber", "gazete", "tv", "radyo", "dijital medya", "iletişim",
+    "sosyal medya", "basın", "reklam", "propaganda", "trend", "viral", "influencer"
+  ],
+  "Mobil Uygulama": [
+    "mobil", "uygulama", "app", "ios", "android", "flutter", "react native",
+    "uygulama geliştirme", "play store", "app store", "güncelleme", "push notification",
+    "mobil tasarım", "apk", "cihaz"
+  ],
+  "Mimarlık": [
+    "mimarlık", "tasarım", "yapı", "inşaat", "bina", "plan", "çizim", "3d",
+    "render", "proje", "estetik", "iç mimari", "mimar", "kentsel dönüşüm"
+  ],
+  "Makale ve Yazarlık": [
+    "makale", "yazı", "yazar", "deneme", "eleştiri", "blog", "gazeteci",
+    "edebiyat", "düşünce yazısı", "yayımlamak", "içerik üretimi", "editör"
+  ],
+  "Marketing (Pazarlama)": [
+    "pazarlama", "reklam", "marka", "kampanya", "ürün", "satış", "müşteri",
+    "dijital pazarlama", "seo", "sosyal medya", "analiz", "pazar araştırması",
+    "strateji", "reklamcılık"
+  ],
+  "Mutfak": [
+    "mutfak", "yemek", "tarif", "pişirme", "aşçı", "tatlı", "fırın", "baharat",
+    "şef", "gurmeyim", "sofra", "akşam yemeği", "yemek tarifi", "lezzet"
+  ],
+  "Mühendislik": [
+    "mühendislik", "mühendis", "teknoloji", "yazılım", "inşaat", "elektrik",
+    "mekanik", "donanım", "otomasyon", "tasarım", "çözüm", "verimlilik", "proje"
+  ],
+  "Modern Sanat": [
+    "modern sanat", "soyut", "resim", "galeri", "estetik", "çağdaş sanat",
+    "heykel", "sanatçı", "yaratıcılık", "performans", "müze", "sanat eseri"
+  ],
+  "Makro Ekonomi": [
+    "ekonomi", "makro ekonomi", "büyüme", "enflasyon", "faiz", "yatırım",
+    "bütçe", "devlet", "piyasa", "arz", "talep", "ekonomik kriz", "finans"
+  ],
+  "Mikro Ekonomi": [
+    "mikro ekonomi", "firma", "üretim", "arz talep", "tüketici", "rekabet",
+    "karlılık", "fiyat", "piyasa dengesi", "verimlilik", "ekonomik analiz"
+  ],
+  "Metaverse": [
+    "metaverse", "sanallık", "3d", "vr", "ar", "oyun", "blockchain",
+    "nft", "dijital dünya", "avatar", "meta", "zuckerberg", "sanat", "evren"
+  ],
+  "Minimalizm": [
+    "minimalizm", "basitlik", "sadelik", "az eşya", "yaşam tarzı", "temizlik",
+    "değer", "zihinsel sadeleşme", "odaklanma", "yalınlık", "minimal yaşam"
+  ],
+  "Mizah": [
+    "mizah", "espri", "komedi", "şaka", "gülmek", "parodi", "skeç", "ironi",
+    "eğlence", "mizahi", "caps", "stand up", "karikatür"
+  ],
+  "Maneviyat": [
+    "maneviyat", "inanç", "dua", "ruh", "ibadet", "Allah", "kalp", "huzur",
+    "sabır", "şükür", "iman", "değerler", "ahiret", "tasavvuf"
+  ],
+  "Modern Teknoloji": [
+    "teknoloji", "inovasyon", "robot", "otomasyon", "veri", "yapay zeka",
+    "5g", "nesnelerin interneti", "iot", "dijitalleşme", "endüstri 4.0", "bilim"
+  ],
+  "Mülakat": [
+    "mülakat", "iş görüşmesi", "cv", "özgeçmiş", "aday", "iş başvurusu",
+    "insan kaynakları", "sorular", "deneyim", "kariyer", "hazırlık", "işe alım"
+  ],
+  "Mülkiyet ve Hukuk": [
+    "mülkiyet", "hak", "kanun", "hukuk", "sözleşme", "tapu", "miras",
+    "adalet", "mahkeme", "hakim", "hukuki süreç", "mülkiyet hakkı"
+  ],
+  "Nostalji": [
+    "nostalji", "geçmiş", "anı", "hatıra", "çocukluk", "eski film", "eski şarkı",
+    "retro", "geçmişe dönüş", "duygusal", "hatıralar", "eski fotoğraf", "anılar"
+  ],
+  "Networking": [
+    "networking", "bağlantı", "iletişim", "iş ağı", "toplantı", "tanışma",
+    "profesyonel ilişki", "linkedin", "mentor", "iş fırsatı", "gelişim", "etkileşim"
+  ],
+  "Nöroloji": [
+    "nöroloji", "beyin", "sinir", "sinir sistemi", "psikoloji", "bilim", "araştırma",
+    "nöron", "bilişsel", "hafıza", "sinaps", "dikkat", "algı", "refleks"
+  ],
+  "Nezaket": [
+    "nezaket", "saygı", "görgü", "iyi davranış", "etik", "empati", "güzel söz",
+    "nazik olmak", "toplumsal davranış", "ahlak", "yardımseverlik", "özen"
+  ],
+  "Nükleer Enerji": [
+    "nükleer", "enerji", "atom", "reaktör", "fizik", "ürün", "güvenlik",
+    "radyoaktif", "plütonyum", "uran", "bilim", "teknoloji", "nükleer santral"
+  ],
+  "Notlar": [
+    "not", "özet", "ders", "bilgi", "defter", "hatırlatma", "günlük", "puan",
+    "kontrol listesi", "ödev", "çalışma", "bilgi kaydı", "not almak", "özetleme"
+  ],
+  "Neşe": [
+    "neşe", "mutluluk", "gülmek", "keyif", "eğlence", "pozitif", "sevinç",
+    "kahkaha", "mood", "mutlu anlar", "tatmin", "keyifli", "eğlenceli"
+  ],
+  "NFT": [
+    "nft", "non fungible token", "crypto", "blockchain", "digital art", "koleksiyon",
+    "ethereum", "meta", "avatar", "koleksiyoner", "dijital varlık", "token"
+  ],
+  "Netflix ve Dizi": [
+    "netflix", "dizi", "film", "streaming", "tv", "izleme", "platform", "episode",
+    "sezon", "yaratıcı", "senaryo", "başrol", "yayın", "eğlence"
+  ],
+  "Nano Teknoloji": [
+    "nano", "teknoloji", "bilim", "mikro", "malzeme", "araştırma", "inovasyon",
+    "nanometre", "nanosensör", "uygulama", "laboratuvar", "mühendislik"
+  ],
+  "Navigasyon": [
+    "navigasyon", "harita", "gps", "rota", "seyahat", "yol", "konum", "uydu",
+    "uygulama", "mobil", "direksiyon", "navigasyon cihazı", "yolculuk"
+  ],
+  "Nefret ve Tartışma": [
+    "nefret", "tartışma", "konflikt", "anlaşmazlık", "saldırı", "tartışmak",
+    "olumsuzluk", "eleştiri", "duygusal yük", "öfke", "anlaşmazlık çözümü"
+  ],
+  "Oyun": [
+    "oyun", "video oyun", "pc oyunu", "mobil oyun", "console", "playstation",
+    "xbox", "steam", "steam oyun", "battle royale", "fps", "mmo", "rpg",
+    "e-spor", "turnuva", "oyuncu", "gamer", "gaming"
+  ],
+  "Organizasyon": [
+    "organizasyon", "etkinlik", "toplantı", "konferans", "seminar", "çalıştay",
+    "topluluk", "kulüp", "planlama", "düzenleme", "yönetim", "logistik",
+    "etkinlik yönetimi", "program", "takvim"
+  ],
+  "Online Eğitim": [
+    "online", "eğitim", "webinar", "kurs", "uzaktan eğitim", "platform",
+    "öğrenme", "video ders", "e-öğrenme", "tutorial", "ders", "ödev", "quiz",
+    "öğretici", "öğrenci"
+  ],
+  "Okul": [
+    "okul", "öğrenci", "sınıf", "öğretmen", "ders", "müfredat", "kampüs",
+    "mezuniyet", "sınav", "defter", "eğitim", "ödev", "etkinlik", "kütüphane"
+  ],
+  "Okuma ve Kitap": [
+    "okuma", "kitap", "roman", "hikaye", "makale", "deneme", "şiir",
+    "yazarlık", "edebiyat", "okuyucu", "kütüphane", "özet", "eleştiri"
+  ],
+  "Optimisazyon ve Verimlilik": [
+    "optimizasyon", "verimlilik", "performans", "iş akışı", "zaman yönetimi",
+    "planlama", "otomasyon", "iş geliştirme", "analiz", "strateji", "dijital",
+    "programlama", "algoritma"
+  ],
+  "Obsesyon ve Tutku": [
+    "obsesyon", "tutku", "hobi", "merak", "ilgi", "odaklanma", "bağımlılık",
+    "alışkanlık", "ilgi alanı", "gelişim", "çaba", "enerji", "motivasyon"
+  ],
+  "Orman ve Doğa": [
+    "orman", "doğa", "bitki", "ağaç", "yürüyüş", "kamp", "ekosistem",
+    "çevre", "hayvan", "biyoloji", "flora", "fauna", "yeşil", "keşif"
+  ],
+  "Operasyon ve Yönetim": [
+    "operasyon", "yönetim", "işletme", "süreç", "lojistik", "planlama",
+    "strateji", "takım yönetimi", "proje", "organizasyon", "performans",
+    "iş akışı", "iş geliştirme"
+  ],
+  "Online Topluluk": [
+    "online topluluk", "forum", "sosyal medya", "platform", "etkileşim",
+    "konuşma", "mesajlaşma", "grup", "takipçi", "moderasyon", "katılım",
+    "üye", "network", "komünite"
+  ],
+  "Otomasyon": [
+    "otomasyon", "robot", "ai", "yapay zeka", "iş akışı", "teknoloji",
+    "veri", "sistem", "mekanik", "endüstri", "programlama", "kontrol",
+    "sensör", "makine", "otomatik"
+  ],
+  "Oyun ve Eğlence": [
+    "oyun", "eğlence", "turnuva", "mmo", "fps", "pc oyun", "mobil oyun",
+    "gamer", "playstation", "xbox", "steam", "rekabet", "kazanç", "turnuva ödülü"
+  ],
+  "Programlama": [
+    "programlama", "yazılım", "kod", "frontend", "backend", "fullstack",
+    "c#", "python", "java", "react", "typescript", "javascript", "algoritma",
+    "data structure", "debug", "uygulama geliştirme", "mobil uygulama", "web"
+  ],
+  "Python": [
+    "python", "script", "pandas", "numpy", "machine learning", "ai", "data analysis",
+    "web scraping", "django", "flask", "oop", "fonksiyon", "loop", "list", "dictionary",
+    "automation", "coding", "programlama"
+  ],
+  "Pazarlama": [
+    "pazarlama", "marketing", "kampanya", "satış", "müşteri", "dijital pazarlama",
+    "seo", "sosyal medya", "strateji", "ürün", "brand", "reklam", "pazarlık",
+    "market", "promosyon", "analiz", "pazar araştırması"
+  ],
+  "Performans": [
+    "performans", "verimlilik", "çalışma", "analiz", "optimizasyon", "iş akışı",
+    "ekip", "başarı", "değerlendirme", "hedef", "ölçüm", "rapor", "feedback",
+    "kpi", "sonuç", "gelişim"
+  ],
+  "Psikoloji": [
+    "psikoloji", "zihin", "duygu", "davranış", "terapi", "mental sağlık",
+    "kişilik", "bilişsel", "motivasyon", "stres", "anksiyete", "depresyon",
+    "öz farkındalık", "çocuk psikolojisi", "ilişki", "danışmanlık"
+  ],
+  "Popüler Kültür": [
+    "popüler kültür", "tv", "dizi", "film", "sosyal medya", "trend",
+    "meme", "influencer", "youtube", "spotify", "kültürel fenomen",
+    "magazin", "celebrity", "gündem", "viral"
+  ],
+  "Podcast": [
+    "podcast", "sesli yayın", "yayın", "dinleme", "konuşma", "sohbet",
+    "konuk", "güncel", "teknoloji", "kültür", "edebiyat", "öğrenme",
+    "eğlence", "müzik", "tartışma", "bilgi"
+  ],
+  "Projeler": [
+    "proje", "planlama", "tasarım", "geliştirme", "ekip", "yönetim",
+    "süreç", "deadline", "teslim", "inovasyon", "analiz", "problem çözme",
+    "strateji", "rapor", "çözüm"
+  ],
+  "Parasal Konular": [
+    "para", "finans", "yatırım", "borsa", "ekonomi", "kripto", "bitcoin",
+    "bankacılık", "finansal okuryazarlık", "faiz", "tasarruf", "gelir",
+    "harcama", "ekonomik analiz"
+  ],
+  "Politika": [
+    "politik", "siyaset", "hükümet", "parti", "seçim", "lider", "karar",
+    "demokrasi", "kanun", "strateji", "uluslararası", "gündem", "yasama",
+    "politik analiz", "dış politika"
+  ],
+  "Program ve Uygulama": [
+    "program", "uygulama", "app", "yazılım", "mobil", "web", "platform",
+    "özellik", "geliştirme", "update", "arayüz", "tasarım", "kullanıcı deneyimi",
+    "user experience", "release"
+  ],
+  "Popüler Oyunlar": [
+    "oyun", "popüler oyun", "pc oyun", "mobil oyun", "playstation",
+    "xbox", "steam", "turnuva", "multiplayer", "rank", "fps", "rpg",
+    "battle royale", "gamer", "espor", "gaming"
+  ],
+  "React": [
+    "react", "javascript", "frontend", "component", "state", "props",
+    "hook", "useState", "useEffect", "router", "redux", "ui", "web",
+    "application", "typescript", "jsx", "virtual dom", "react query"
+  ],
+  "Robotik": [
+    "robotik", "robot", "otomasyon", "mekanik", "ai", "sensör", "teknoloji",
+    "endüstri", "yapay zeka", "mekatronik", "kontrol", "proje", "geliştirme",
+    "tasarım", "programlama"
+  ],
+  "Ruh Sağlığı": [
+    "ruh sağlığı", "psikoloji", "stres", "anksiyete", "depresyon", "terapi",
+    "mental sağlık", "düşünce", "öz farkındalık", "meditasyon", "duygu",
+    "psikiyatri", "danışmanlık", "kendini geliştirme", "duygusal zeka"
+  ],
+  "Reklam": [
+    "reklam", "pazarlama", "kampanya", "dijital reklam", "seo", "sosyal medya",
+    "banner", "tanıtım", "ürün", "brand", "promosyon", "strateji",
+    "influencer", "etkileşim", "performans"
+  ],
+  "Ritim ve Müzik": [
+    "ritim", "müzik", "bateri", "melodi", "şarkı", "beat", "konser",
+    "performans", "enstrüman", "gitar", "piyano", "ritmik", "tempo", "note",
+    "sound", "soundtrack"
+  ],
+  "Radyo": [
+    "radyo", "yayın", "fm", "stereo", "program", "podcast", "konuşma",
+    "müzik yayını", "canlı yayın", "dj", "show", "haber", "tanıtım", "dijital radyo"
+  ],
+  "Rol ve Karakter": [
+    "rol", "karakter", "oyunculuk", "film", "dizi", "televizyon", "performans",
+    "senaryo", "improv", "casting", "act", "drama", "hikaye", "dramatik"
+  ],
+  "Rota ve Seyahat": [
+    "rota", "seyahat", "gezi", "harita", "tur", "gps", "konum", "yolculuk",
+    "planlama", "kamp", "doğa", "ulaşım", "turizm", "keşif", "adventure"
+  ],
+  "Renk ve Tasarım": [
+    "renk", "tasarım", "grafik", "illustration", "palet", "estetik", "ui",
+    "ux", "fotoğraf", "görsel", "tipografi", "moda", "logo", "sanat", "stil"
+  ],
+  "Risk ve Finans": [
+    "risk", "finans", "yatırım", "borsa", "ekonomi", "analiz", "değer",
+    "portföy", "kripto", "bitcoin", "strateji", "kar", "zarar", "hesaplama",
+    "veri"
+  ],
+  "Startup": [
+    "startup", "girişim", "yatırım", "kurucu", "iş fikri", "pitch",
+    "venture", "scaleup", "inovasyon", "funding", "mentorluk", "proje",
+    "ekip", "teknoloji", "ürün geliştirme"
+  ],
+  "Sosyal Medya": [
+    "sosyal medya", "instagram", "facebook", "twitter", "tiktok", "linkedin",
+    "paylaşım", "influencer", "trend", "beğeni", "yorum", "viral",
+    "hashtag", "story", "reels", "takipçi"
+  ],
+  "Spor": [
+    "spor", "futbol", "basketbol", "tenis", "voleybol", "koşu", "fitness",
+    "antrenman", "yüzme", "spor salonu", "oyuncu", "lig", "turnuva", "maç",
+    "sporcu", "olimpiyat"
+  ],
+  "SEO": [
+    "seo", "arama motoru", "anahtar kelime", "optimizasyon", "backlink",
+    "site hızı", "google", "meta tag", "içerik", "dijital pazarlama",
+    "analiz", "trafik", "organik", "arama sonuçları", "ranking"
+  ],
+  "Sanat": [
+    "sanat", "resim", "heykel", "müzik", "performans", "galeri",
+    "yaratıcı", "modern sanat", "klasik sanat", "edebiyat", "fotoğraf",
+    "tasarım", "estetik", "yaratıcılık", "çeşitlilik"
+  ],
+  "Siyaset": [
+    "siyaset", "politik", "hükümet", "seçim", "parti", "lider",
+    "karar", "demokrasi", "yasa", "politik analiz", "dış politika",
+    "uluslararası", "gündem", "politik olay", "strateji"
+  ],
+  "Sinema": [
+    "sinema", "film", "dizi", "senaryo", "oyuncu", "yönetmen",
+    "festival", "vizyon", "eleştiri", "poster", "kamera", "çekim",
+    "performans", "animasyon", "sahne"
+  ],
+  "Sağlık": [
+    "sağlık", "beslenme", "egzersiz", "doktor", "hastalık", "tedavi",
+    "mental sağlık", "psikoloji", "fitness", "wellness", "hijyen",
+    "medikal", "sağlıklı yaşam", "kontrol", "önlem"
+  ],
+  "Sürdürülebilirlik": [
+    "sürdürülebilirlik", "çevre", "doğa", "geri dönüşüm", "iklim",
+    "enerji", "temiz", "karbon ayak izi", "yenilenebilir enerji",
+    "ekoloji", "çevre dostu", "çevre bilinci", "sosyal sorumluluk"
+  ],
+  "Sosyal Sorumluluk": [
+    "sosyal sorumluluk", "yardım", "toplum", "hayır", "projeler",
+    "etki", "farkındalık", "kampanya", "insan hakları", "gönüllü",
+    "yardım kuruluşu", "destek", "katılım"
+  ],
+  "Seyahat": [
+    "seyahat", "gezi", "tur", "rota", "kamp", "tatil", "konum",
+    "harita", "uçak", "otobüs", "deniz", "keşif", "destinasyon", "turizm",
+    "adventure"
+  ],
+  "Sosyal Psikoloji": [
+    "sosyal psikoloji", "davranış", "toplum", "etkileşim", "grup",
+    "liderlik", "motivasyon", "empati", "algı", "norm", "rol",
+    "kültürel etki", "psikoloji", "insan ilişkileri"
+  ],
+  "Teknoloji": [
+    "teknoloji", "yazılım", "donanım", "internet", "ai", "yapay zeka",
+    "robotik", "inovasyon", "mobil", "web", "geliştirme", "donanım",
+    "startup", "programlama", "bilim", "blockchain"
+  ],
+  "Tasarım": [
+    "tasarım", "grafik tasarım", "ui", "ux", "illustration", "logo",
+    "tipografi", "estetik", "renk", "web tasarım", "mobil tasarım",
+    "sanat", "yaratıcı", "fotoğraf", "3d model", "illustrator"
+  ],
+  "Tiyatro": [
+    "tiyatro", "oyunculuk", "sahne", "performans", "drama", "senaryo",
+    "rol", "reji", "prova", "tiyatro oyunu", "festival", "sanatçı",
+    "karakter", "gösteri", "kostüm"
+  ],
+  "Tarih": [
+    "tarih", "geçmiş", "medeniyet", "arkeoloji", "kültür", "olay",
+    "çağ", "insanlık tarihi", "krallık", "imparatorluk", "devrim",
+    "tarihi belge", "eski uygarlık", "bellek", "tarihi araştırma"
+  ],
+  "Topluluk": [
+    "topluluk", "forum", "grup", "platform", "katılım", "etkileşim",
+    "sosyal ağ", "network", "gönüllü", "komünite", "üyeler", "paylaşım",
+    "etkinlik", "toplumsal", "birliktelik"
+  ],
+  "Tatil": [
+    "tatil", "seyahat", "gezi", "konaklama", "otel", "tur", "rota",
+    "turizm", "plaj", "doğa", "deniz", "kamp", "tatil planı", "adventure",
+    "tatil aktiviteleri"
+  ],
+  "Trend": [
+    "trend", "moda", "stil", "popüler", "viral", "sosyal medya",
+    "influencer", "yeni", "gündem", "teknoloji trend", "stil öneri",
+    "trend haber", "trend topic", "popüler kültür", "trend analiz"
+  ],
+  "Takipçi ve Sosyal Etkileşim": [
+    "takipçi", "beğeni", "yorum", "etkileşim", "viral", "share", "like",
+    "sosyal medya", "influencer", "story", "reels", "platform", "network",
+    "topluluk", "katılım"
+  ],
+  "Tarım ve Toprak": [
+    "tarım", "toprak", "çiftlik", "bitki", "ürün", "hasat", "bahçe",
+    "ekoloji", "gıda", "çiftçi", "organik", "ekosistem", "sürdürülebilir",
+    "tarım teknolojisi", "çiftçilik"
+  ],
+  "Teknik ve Mühendislik": [
+    "teknik", "mühendislik", "tasarım", "proje", "analiz", "çözüm",
+    "planlama", "sistem", "otomasyon", "robotik", "mekanik", "elektrik",
+    "yazılım", "donanım", "inovasyon"
+  ],
+  "Uzay": [
+    "uzay", "gezegen", "yıldız", "güneş sistemi", "astronomi", "teleskop",
+    "evren", "gezegen keşfi", "uzay yolculuğu", "roket", "astronot", "NASA",
+    "galaksi", "kara delik", "evren bilimi"
+  ],
+  "Üniversite": [
+    "üniversite", "öğrenci", "kampüs", "ders", "sınav", "akademik",
+    "mezuniyet", "fakülte", "program", "araştırma", "öğretim üyesi",
+    "kurs", "projeler", "kulüp", "etkinlik"
+  ],
+  "UI/UX": [
+    "ui", "ux", "tasarım", "kullanıcı deneyimi", "arayüz", "prototip",
+    "wireframe", "interaction", "ux design", "ui design", "interface",
+    "kullanılabilirlik", "web tasarım", "mobil tasarım", "dijital ürün"
+  ],
+  "Uygulama": [
+    "uygulama", "app", "mobil uygulama", "web uygulama", "platform",
+    "yazılım", "kullanıcı", "özellik", "update", "arayüz", "tasarım",
+    "app store", "google play", "performans", "programlama"
+  ],
+  "Uzmanlık": [
+    "uzmanlık", "alan", "bilgi", "deneyim", "yetkinlik", "kariyer",
+    "profesyonel", "danışmanlık", "tecrübe", "sertifika", "beceri",
+    "analiz", "araştırma", "mentorluk", "rehberlik"
+  ],
+  "Uluslararası": [
+    "uluslararası", "dış politika", "global", "ülke", "ekonomi",
+    "ticaret", "küresel", "organizasyon", "toplantı", "sektör", "lider",
+    "strateji", "işbirliği", "konferans", "etkinlik"
+  ],
+  "Ulaşım": [
+    "ulaşım", "taşıma", "trafik", "metro", "otobüs", "tren", "hava yolu",
+    "seyahat", "rota", "gps", "planlama", "logistik", "nakliye", "gemi",
+    "araç"
+  ],
+  "Uzman Görüşleri": [
+    "uzman görüşü", "yorum", "analiz", "danışmanlık", "teknik", "rapor",
+    "inceleme", "araştırma", "tavsiye", "bilgi", "deneyim", "rekomendasyon",
+    "uzmanlık alanı", "profesyonel", "örnek"
+  ],
+  "Uygulamalı Bilim": [
+    "uygulamalı bilim", "deney", "laboratuvar", "proje", "araştırma",
+    "teknoloji", "test", "veri", "analiz", "sonuç", "hipotez", "bilimsel yöntem",
+    "mekanik", "kimya", "fizik"
+  ],
+  "Umut ve Motivasyon": [
+    "umut", "motivasyon", "başarı", "ilham", "pozitif", "enerji",
+    "hedef", "gelişim", "kariyer", "kişisel gelişim", "azim", "kararlılık",
+    "çaba", "özgüven", "kendine güven"
+  ],
+  "Video": [
+    "video", "çekim", "montaj", "kamera", "film", "klip", "youtube",
+    "streaming", "dijital medya", "prodüksiyon", "edit", "shorts", "tutorial",
+    "konsept", "canlı yayın"
+  ],
+  "VR / AR": [
+    "vr", "virtual reality", "sanal gerçeklik", "ar", "augmented reality",
+    "uygulama", "oyun", "teknoloji", "3d", "simülasyon", "gözlük", "etkileşim",
+    "immersive", "deneyim", "proje"
+  ],
+  "Vaka Çalışması": [
+    "vaka çalışması", "case study", "analiz", "proje", "problem çözme",
+    "araştırma", "veri", "sonuç", "öğrenme", "rapor", "strateji", "problem",
+    "çözüm önerisi", "sunum", "ders"
+  ],
+  "Veri": [
+    "veri", "data", "analiz", "big data", "istatistik", "grafik", "rapor",
+    "ölçüm", "veritabanı", "sql", "ml", "ai", "iş zekası", "trend", "grafik"
+  ],
+  "Vizyon": [
+    "vizyon", "strateji", "gelecek", "hedef", "plan", "kariyer", "liderlik",
+    "proje", "inovasyon", "gelişim", "misyon", "fikir", "yol haritası", "başarı",
+    "farkındalık"
+  ],
+  "Vlog": [
+    "vlog", "video blog", "youtube", "çekim", "montaj", "storytelling",
+    "günlük", "hayat", "deneyim", "seyahat", "eğlence", "kamera", "edit",
+    "konsept", "izleyici"
+  ],
+  "Verimlilik": [
+    "verimlilik", "performans", "iş akışı", "zaman yönetimi", "planlama",
+    "dijital araç", "otomatizasyon", "hedef", "çalışma yöntemi", "ölçüm",
+    "rapor", "gelişim", "optimizasyon", "motivasyon", "sonuç"
+  ],
+  "Vegan ve Beslenme": [
+    "vegan", "bitkisel", "beslenme", "sağlıklı yaşam", "diyet", "gıda",
+    "tarım", "organik", "yemek", "recipe", "mutfak", "bitki bazlı",
+    "vegan tarif", "sağlık", "nutrition"
+  ],
+  "Video Oyunları": [
+    "video oyun", "pc oyun", "mobil oyun", "console", "playstation", "xbox",
+    "steam", "fps", "rpg", "mmo", "turnuva", "multiplayer", "gaming", "e-spor",
+    "rank"
+  ],
+  "Vizyoner Girişimcilik": [
+    "vizyoner", "girişimcilik", "startup", "inovasyon", "yatırım", "proje",
+    "liderlik", "ekip", "strateji", "hedef", "kariyer", "mentorluk", "plan",
+    "fikir", "yaratıcı"
+  ],
+  "Yapay Zeka": [
+    "yapay zeka", "ai", "ml", "machine learning", "deep learning", "veri",
+    "otomasyon", "robotik", "algoritma", "analiz", "tahmin", "nöral ağ",
+    "chatbot", "görüntü işleme", "doğal dil işleme"
+  ],
+  "Yazar": [
+    "yazar", "kitap", "roman", "hikaye", "makale", "şiir", "edebiyat",
+    "deneme", "öykü", "yaratıcı yazım", "taslak", "yayın", "edit", "kalem",
+    "hikaye anlatımı"
+  ],
+  "Yazılım": [
+    "yazılım", "programlama", "web", "mobil", "frontend", "backend",
+    "fullstack", "javascript", "react", "c#", "python", "typescript",
+    "api", "veritabanı", "uygulama"
+  ],
+  "Yatırım": [
+    "yatırım", "borsa", "finans", "kripto", "bitcoin", "portföy", "ekonomi",
+    "risk", "analiz", "faiz", "gelir", "harcama", "ekonomik planlama",
+    "piyasa", "strateji"
+  ],
+  "Yürüyüş ve Spor": [
+    "yürüyüş", "spor", "koşu", "fitness", "sağlık", "egzersiz", "outdoor",
+    "doğa", "aktivite", "kamp", "bisiklet", "yoga", "wellness", "spor salonu",
+    "performans"
+  ],
+  "Yemek": [
+    "yemek", "tarif", "mutfak", "sağlıklı beslenme", "gıda", "öğün",
+    "vegan", "diyet", "tatlı", "çorba", "et", "sebze", "pişirme", "lezzet",
+    "yemek tarifi"
+  ],
+  "Yoga": [
+    "yoga", "meditasyon", "wellness", "egzersiz", "zihin", "beden",
+    "nefes", "esneme", "denge", "fiziksel sağlık", "mental sağlık",
+    "spor", "fit", "rahatlama", "öz farkındalık"
+  ],
+  "Yenilik ve İnovasyon": [
+    "yenilik", "inovasyon", "teknoloji", "startup", "proje", "gelişim",
+    "strateji", "yaratıcılık", "fikir", "tasarım", "ar-ge", "liderlik",
+    "yönetim", "dijital", "inovatif çözüm"
+  ],
+  "Yaşam Tarzı": [
+    "yaşam tarzı", "stil", "moda", "sağlık", "spor", "hobi", "gezi",
+    "tatil", "kişisel gelişim", "ev dekorasyonu", "alışkanlık", "motivasyon",
+    "trend", "eğlence", "gündelik hayat"
+  ],
+  "Yönetim": [
+    "yönetim", "liderlik", "strateji", "ekip", "proje", "planlama",
+    "performans", "iş akışı", "karar", "iş geliştirme", "organizasyon",
+    "toplantı", "hedef", "rapor", "analiz"
+  ],
+  "Zeka Oyunları": [
+    "zeka oyunları", "satranç", "bulmaca", "mantık", "problem çözme",
+    "strateji", "sudoku", "analiz", "eğlence", "akıl oyunları", "quiz",
+    "zeka testi", "beyin jimnastiği", "zeka geliştirme", "kart oyunu"
+  ],
+  "Ziyaret ve Seyahat": [
+    "ziyaret", "gezi", "tur", "seyahat", "rota", "turizm", "şehir turu",
+    "tatil", "rehber", "keşif", "doğa", "kültür gezisi", "müze", "tarih",
+    "tur planlama"
+  ],
+  "Zihin Sağlığı": [
+    "zihin sağlığı", "mental sağlık", "stres", "motivasyon", "psikoloji",
+    "terapi", "duygu yönetimi", "meditasyon", "öz farkındalık",
+    "kaygı", "depresyon", "refleksiyon", "zihinsel egzersiz", "rahatlama",
+    "kişisel gelişim"
+  ],
+  "Zanaat ve El Sanatları": [
+    "zanaat", "el sanatları", "örgü", "dikiş", "ahşap", "resim",
+    "el işi", "tasarım", "yaratıcı", "hobiler", "sanat", "üretim",
+    "el yapımı", "dekorasyon", "craft"
+  ],
+  "Zenginlik ve Finans": [
+    "zenginlik", "finans", "yatırım", "ekonomi", "borsa", "para yönetimi",
+    "portföy", "gelir", "harcama", "tasarruf", "kripto", "bitcoin",
+    "faiz", "ekonomik planlama", "kar"
+  ]
+}

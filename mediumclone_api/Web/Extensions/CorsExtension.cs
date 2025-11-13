@@ -10,7 +10,7 @@ namespace mediumclone_api.Web.Extensions
                 {
                     config.AllowAnyHeader();
                     config.AllowAnyMethod();
-                    config.WithOrigins("http://localhost:5173");
+                    config.WithOrigins("https://localhost:5173");
                     config.AllowCredentials();
                 });
             });

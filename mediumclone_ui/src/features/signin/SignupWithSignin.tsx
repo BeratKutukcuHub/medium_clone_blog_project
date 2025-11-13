@@ -1,26 +1,28 @@
 import { useNavigate, useParams } from "react-router-dom"
 import { GiBlackBook } from "react-icons/gi";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { LiaAtomSolid } from "react-icons/lia";
 import { AiOutlineLike } from "react-icons/ai";
 import { AiOutlineDislike } from "react-icons/ai";
 import "./signupwithsignin.css"
-import { useSigninMutation, useSignupMutation } from "../../app/slices/AuthService";
+import { useSignupwithverifyMutation } from "../../app/services/AuthService";
+import { selectUser, setUser } from "../../app/slices/UserSlice";
+import { useDispatch, useSelector } from "react-redux";
 interface TagAndIndex  {
     tagName : string,
     index : number
 }
 export const SignupWithSignin = ( ) => {
     const navigate = useNavigate();
-    const [signup] = useSignupMutation();
-    const [signin] = useSigninMutation();
+    const [signup] = useSignupwithverifyMutation();
     const [userName, setUserName] = useState("");
+    const dispatch = useDispatch();
     const buttonRef = useRef<HTMLButtonElement>(null);
     const tagSName  = () : string => crypto.randomUUID().substring(0,10);
     const [clicked, setClicked] = useState<TagAndIndex[]>([])
     const [registerState , setRegisterState] = useState(false);
     const param = useParams<{email : string}>();
-
+    const userInfo = useSelector(selectUser);
     const handleRight = () => {
         const inputVal : number = userName.length ?? 0;
         console.log(inputVal);
@@ -52,19 +54,21 @@ export const SignupWithSignin = ( ) => {
     const handleApply = async () => {
             if(userName.length > 5){
                 if(param.email){
-                    await signup({
+                    const response = await signup({
                         email : param.email,
-                        userName : userName
+                        username : userName
                     }).unwrap();
-                    const {token} = await signin({
-                        email : param.email,
-                        userName : userName
-                    }).unwrap();
-                    localStorage.setItem("x-token",token);
+                    
+                    dispatch(setUser(response));
+                    localStorage.setItem("user",JSON.stringify(userInfo));
                     navigate("/medium");
                 }
             }
         }
+        useEffect(()=> {
+            if(!userInfo)return;
+            localStorage.setItem("user",JSON.stringify(userInfo));
+        },[userInfo])
     return (
         <>
             <nav className="w-100 bg-white text-center text-black" style={{height:"86.5px",marginBottom:"30px"}}>

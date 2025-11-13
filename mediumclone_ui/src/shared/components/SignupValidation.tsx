@@ -1,26 +1,21 @@
 import { useEffect, useRef, useState } from "react";
 import "./signup.css"
+import { useConfirmVerifyMutation } from "../../app/services/ActivationService";
 import { useNavigate } from "react-router-dom";
-import type { SignupMailResponse } from "../../app/slices/AuthService";
 
-export const SignupValidation = ({signupMailResponse}: {signupMailResponse:SignupMailResponse}) => {
-    const {email ,activation } = signupMailResponse;
-    const [isApplied , setApplied] = useState<boolean>(false);
+export const SignupValidation = ({email}:{email:string}) => {
     const applyButtonRef = useRef<HTMLButtonElement>(null);
     const inputRef = useRef<HTMLInputElement[]>([] as HTMLInputElement[]);
-
     const navigate = useNavigate();
-    useEffect(()=> {
-        if(isApplied){
-            navigate(`/signupwithsignin/${email}`);
-        }
-    },[isApplied]);
-
+    const [isVerified , setVerified] = useState<boolean>(false);
+    console.log(isVerified);
+    const [confirmVerify, {isSuccess}] = useConfirmVerifyMutation();
+    const [token , setToken] = useState<string>("");
     const handleChangeValues = () : boolean => {
         const response = inputRef.current.some((item) => item.value === "");
         return response;
     }
-
+    
     const handleChange = (e : React.ChangeEvent<HTMLInputElement>,index : number) => {
             if(e.currentTarget.value !== "" && index <5){
                 inputRef.current[index+1].classList.add("bd");
@@ -30,11 +25,15 @@ export const SignupValidation = ({signupMailResponse}: {signupMailResponse:Signu
             const response = handleChangeValues();
             const classList = applyButtonRef.current?.classList;
             if(!response){
+                for(const input of inputRef.current){
+                    setToken((prev)=> prev+=input.value);
+                }
                 inputRef.current[5].classList?.remove("bd");
                 classList?.add("acabga");
                     classList?.remove("acabgp");
             }
             else {
+                setToken("");
                 classList?.add("acabgp");
                 classList?.remove("acabga");
             }
@@ -52,18 +51,35 @@ export const SignupValidation = ({signupMailResponse}: {signupMailResponse:Signu
             }
         }
         const handleClick = () => {
-            let code : string = "";
-            inputRef.current.forEach((item) => {
-                code += item.value;
-            });
-            console.log(code);
-            if(code.trim() === activation.trim().toString()){
-                setApplied(true);
-                return;
-            }
-            else setApplied(true);
+            confirmVerify({email : email, token});
+            if(isSuccess)
+                setVerified(isSuccess);
             return;
         }
+        useEffect(()=>{
+            if(isVerified)
+            navigate(`/signupwithsignin/${email}`);
+        },[isVerified, email, navigate]);
+        
+        useEffect(() => {
+        const bc = new BroadcastChannel("activation_channel");
+        bc.onmessage = (event) => {
+          const verified: boolean = event.data.isVerified;
+          if (verified) {
+            setVerified(true);
+          }
+        };
+        return () => {
+          bc.close(); 
+        };
+        },[]); 
+
+useEffect(() => {
+  if (isVerified) {
+    navigate(`/signupwithsignin/${email}`);
+  }
+}, [isVerified, email, navigate]);
+
     return (
         <>
             <h5>Check your email inbox</h5>

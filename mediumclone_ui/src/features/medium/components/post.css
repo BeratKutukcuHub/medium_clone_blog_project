@@ -1,0 +1,145 @@
+.pc{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 200px;
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 15px;
+    background: #e9e9e95c;
+}
+.pc > *{
+    min-height: 200px;
+    height: auto;
+}
+.pci{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 1px white;
+    padding: 10px 15px;
+    color: white;
+    width: 95%;
+    background-color: white;
+    margin: 5px auto;
+    color: #0000009d;
+}
+.fs{
+    font-size: 0.7rem;
+}
+.fm{
+    font-size: 1rem;
+}
+.fl{
+    font-size: 1.4rem;
+}
+.pcu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    flex: 1 1 10%;
+}
+.pcu h4:last-child{
+    justify-self: flex-end;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.active{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(60, 149, 60);
+}
+.passive{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(175, 45, 45);
+}
+.pcc{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1 1 80%;
+}
+.pcd{
+    flex: 1 1 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pcd i{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.pdc{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #e9e9e95c;
+}
+.pdcc{
+    width: 80%;
+    height: 100%;
+    margin: auto auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.pdf{
+    width: 100%;
+    flex: 1 1 15%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.fls{
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: "Alan Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.flm {
+    font-family: "Delius", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+.fw{
+    margin: 0 5px;
+    font-weight: 900;
+}
+.pdf > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.pdf div h4{
+    font-size: 0.9rem;
+}
+.pdm{
+    flex: 1 1 auto;
+    margin: 50px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.pdb{
+    flex: 1 1 10%;
+}

@@ -1,38 +1,30 @@
+using AutoMapper;
 using MediatR;
-using mediumclone_api.Application.Utilities;
-using mediumclone_api.Common.Shared;
-using mediumclone_api.Infrastructure.Interfaces;
+using mediumclone_api.Application.Features.Auth.Profiles;
+using mediumclone_api.Application.UOW;
+using mediumclone_api.Domain.Entities;
 
 namespace mediumclone_api.Application.Features.Auth.Commands.Handlers
 {
-    public class SigninCommandHandler : IRequestHandler<SigninCommand, TokenAndClaim>
+    public class SigninCommandHandler : IRequestHandler<SigninCommand, GetUserDto>
     {
-        private readonly TokenService _tokenGenerator;
-        private readonly IUserRepository _user;
+        IUnitOfWork _uow;
+        IMapper _mapper;
 
-        public SigninCommandHandler(IUserRepository user, TokenService tokenGenerator)
+        public SigninCommandHandler(IMapper mapper, IUnitOfWork uow)
         {
-            _user = user;
-            _tokenGenerator = tokenGenerator;
+            _mapper = mapper;
+            _uow = uow;
         }
-        public async Task<TokenAndClaim> Handle(SigninCommand request, CancellationToken cancellationToken)
+
+        public async Task<GetUserDto> Handle(SigninCommand request, CancellationToken cancellationToken)
         {
-            var responses = await _user.GetEntities();
-            foreach (var user in responses)
-            {
-                if (user.Username == request.UserName.Trim() && user.Email == request.Email.Trim())
-                {
-                    var tokenGenerator = _tokenGenerator.GetToken(user);
-                    var refreshToken = _tokenGenerator.GetToken();
-                    return new TokenAndClaim
-                    {
-                        Claims = tokenGenerator.claims,
-                        Token = tokenGenerator.token,
-                        RefreshToken = refreshToken
-                    };
-                }
-            }
-            throw new Exception("Not found the user");
+            var responseUserInfo = await _uow._userRepository.ActivatePendingUserAsync(request.Email);
+            responseUserInfo.IsActive = true;
+            await _uow._userRepository.UpdateEntiy(responseUserInfo.Id, responseUserInfo);
+            var responseActivation = await _uow._activationRepository.ActivationCheckerAsync(request.Email);
+            await _uow._activationRepository.DeleteEntity(responseActivation.Id);
+            return _mapper.Map<GetUserDto>(responseUserInfo);
         }
     }
 }

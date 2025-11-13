@@ -6,6 +6,7 @@ namespace mediumclone_api.Application.Features.Profiles
         public string Username { get; init; } 
         public string Email { get; init; } 
         public string PasswordHash { get; init; } 
+        public bool IsActive { get; init; } 
         public IEnumerable<string> Role { get; init; }
         public DateTime CreatedAt { get; init; } 
         

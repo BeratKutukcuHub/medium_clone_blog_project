@@ -1,3 +1,4 @@
+using MediatR;
 using mediumclone_api.Presentation.Controllers;
 using mediumclone_api.Web.Extensions;
 
@@ -7,16 +8,17 @@ builder.Services.AddControllers().AddApplicationPart(typeof(UserController).Asse
 builder.Services.AddRouting();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.UtilitiesServices();
+builder.Services.SupportingLibrariesServices();
 builder.Services.CorsService();
-builder.AuthenticationService();
-builder.Services.AddAuthorization();
+builder.Services.AuthenticationCookie(builder.Configuration);
+builder.Services.AuthorizationCookie();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpsRedirection(config => config.HttpsPort = 7232);
 builder.Services.AddMemoryCache();
 builder.Services.AddRateLimiter();
 
-builder.Services.SupportingLibrariesServices();
+
 builder.Services.AllServices();
 var app = builder.Build();
 

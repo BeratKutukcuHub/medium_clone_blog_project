@@ -3,19 +3,15 @@ import { CgDanger } from "react-icons/cg"
 import { FcGoogle } from "react-icons/fc"
 import { MdOutgoingMail } from "react-icons/md"
 import { SignupValidation } from "./SignupValidation";
-import { useSignupMailMutation, type SignupMailResponse } from "../../app/slices/AuthService";
+import { useVerifyMutation } from "../../app/services/ActivationService";
+import { EmailHandler } from "../../utilities/emailHandler";
 
 export const SignUpEmail = ({activation, isActivation} : {activation : (arg : boolean)=> void, isActivation:boolean}) => {
-    const [signupMail] = useSignupMailMutation();
     const [email, setCreateEmail] = useState<string>("");
     const [isBoolean , setBoolean] = useState<boolean>(false);
-    const [activationCode , setActivationCode] = useState<SignupMailResponse>({} as SignupMailResponse);
     const buttonRef = useRef<HTMLButtonElement>(null);
+    const [verify] = useVerifyMutation();
     
-    interface HostResponse {
-        email : string,
-        isOk : boolean    
-    };
     const startInputContent = {
         border:"none",
         padding:"8px 20px",
@@ -25,38 +21,26 @@ export const SignUpEmail = ({activation, isActivation} : {activation : (arg : bo
         fontWeight:"500"
     }
     
-    const handleCheckEmailResolver = () : HostResponse => {
-        const mailList : string[] = ["gmail.com","hotmail.com","outlook.com"];
-        const response : HostResponse = {} as HostResponse;
-        mailList.forEach((mail) => {
-            
-            if(email.includes("@"))
-            {
-                const value = email.split("@");
-                if(mail == value[1]){
-                    response.email = email;
-                    response.isOk = true;  
-                }
-            }
-            else {
-                response.email = "";
-                response.isOk = false;
-            }
-        });
-        return response;
-    };
+    
 
     const handleClick = async (): Promise<void> => {
-        const request = handleCheckEmailResolver();
+        const request = EmailHandler(email);
         if(!request.isOk)
         {
             activation(false);
         }
         else {
+            verify({
+                title : "Kayıt, Maili",
+                message : "Değerli kullanıcımız, kayıt işlemini tamamlamak adına gelen kodu sitemizde" +
+                "açılan ekrana yazabilir veya butona tıklayarak onaylayabilirsiniz.",
+                activation : {
+                    email : email
+                }
+            }).unwrap();
             buttonRef.current?.classList.add("no-click");
-            const response = (await signupMail({email : email}).unwrap());
-            setActivationCode(response)
             buttonRef.current?.classList.remove("no-click");
+            localStorage.setItem("email",JSON.stringify(email));
             activation(true);
         }
     }
@@ -79,7 +63,7 @@ export const SignUpEmail = ({activation, isActivation} : {activation : (arg : bo
                                 <h6 style={{marginTop:"20px"}}>Your email</h6>
                                 <input value={email} type="text" placeholder="Enter your email address" className="ei" 
                                 style={
-                                    isBoolean!?  {
+                                    isBoolean?  {
                                         display:"flex",
                                         justifyContent:"space-between",
                                         backgroundColor:"rgba(210, 210, 210, 1)",
@@ -93,10 +77,10 @@ export const SignUpEmail = ({activation, isActivation} : {activation : (arg : bo
                                     } : 
                                     startInputContent}
                                 onChange={(e)=>setCreateEmail(e.target.value)}
-                                onBlur={()=> setBoolean(!handleCheckEmailResolver().isOk)}
+                                onBlur={()=> setBoolean(!EmailHandler(email).isOk)}
                                 onClick={()=> setBoolean(false)}/>
                                     {
-                                        isBoolean!? <CgDanger size={25}  style={{
+                                        isBoolean? <CgDanger size={25}  style={{
                                             stroke:"red",
                                             fill : "red",
                                             position:"absolute",
@@ -108,7 +92,7 @@ export const SignUpEmail = ({activation, isActivation} : {activation : (arg : bo
                                     }
                             </div>
                                 {
-                                    isBoolean!?
+                                    isBoolean?
                                     <h6 style={{fontSize:"0.7rem", color:"rgba(168, 53, 53, 1)"}}>
                                         Please enter a valid email address.
                                     </h6> : ""
@@ -142,7 +126,7 @@ export const SignUpEmail = ({activation, isActivation} : {activation : (arg : bo
                             Google Privacy Policy and Terms of Service apply.</h5>
                                 </>
                                 : 
-                                <SignupValidation signupMailResponse={activationCode} />
+                                <SignupValidation email={email}/>
                             }
                         </div>
     );
